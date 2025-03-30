@@ -17,10 +17,10 @@
 		unit and/or the Project. The Sale is subject to terms of Application Form and Agreement for
 		Sale. All specifications of the unit shall be as per the final agreement between the Parties.
 		Recipients are advised to apprise themselves of the necessary and relevant information of the
-		project prior to making any purchase decisions. The official website of pushpanjali Properties Ltd.
-		Is www.pushpanjaliproperties.com (http://www.pushpanjaliproperties.com)
-		(http://www.pushpanjaliproperties.com/ (http://www.pushpanjaliproperties.com/)). Please do not rely on
-		the information provided on any other website. T&C Apply.
+		project prior to making any purchase decisions. The official website of pushpanjali Properties
+		Ltd. Is www.pushpanjaliproperties.com (http://www.pushpanjaliproperties.com)
+		(http://www.pushpanjaliproperties.com/ (http://www.pushpanjaliproperties.com/)). Please do not
+		rely on the information provided on any other website. T&C Apply.
 	</p>
 </section>
 

@@ -1,7 +1,7 @@
 <script>
 	import HamburgerBtn from './HamburgerBtn.svelte';
-	import logo from '$lib/assets/images/logop.svg'
-	import logoWhite from '$lib/assets/images/logow.svg'
+	import logo from '$lib/assets/images/logop.svg';
+	import logoWhite from '$lib/assets/images/logow.svg';
 
 	let isMenuVisible = $state(false);
 	let y = $state(0);
@@ -22,7 +22,11 @@
 		<div class="header-wrapper">
 			<div class="logo">
 				<a href="/">
-					<img class="company-logo" src={isMenuVisible || y > 100 ? logoWhite : logoWhite} alt="Company Logo" />
+					<img
+						class="company-logo"
+						src={isMenuVisible || y > 100 ? logoWhite : logoWhite}
+						alt="Company Logo"
+					/>
 				</a>
 			</div>
 			<HamburgerBtn {isMenuVisible} {toggleMenu} />
@@ -52,10 +56,10 @@
 		top: 0;
 		width: 100%;
 		z-index: 100;
-		background-image: linear-gradient(180deg, rgba(22, 22, 23, .5), rgba(22, 22, 23, 0));
+		background-image: linear-gradient(180deg, rgba(22, 22, 23, 0.5), rgba(22, 22, 23, 0));
 	}
 	.header-solid-bg {
-		background-color: rgba(22, 22, 23, .8);
+		background-color: rgba(22, 22, 23, 0.8);
 		backdrop-filter: saturate(180%) blur(20px);
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		transition: background-color 0.3s ease-in-out;
@@ -91,7 +95,7 @@
 			top: 100%;
 			left: 0;
 			width: 100%;
-			background-color: rgba(22, 22, 23, .8);
+			background-color: rgba(22, 22, 23, 0.8);
 			backdrop-filter: saturate(180%) blur(20px);
 			-webkit-backdrop-filter: saturate(180%) blur(20px);
 			padding: 2rem;

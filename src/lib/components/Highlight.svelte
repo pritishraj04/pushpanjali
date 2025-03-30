@@ -2,10 +2,10 @@
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 	import Icon from '@iconify/svelte';
 
-	import highlight1 from '$lib/assets/images/highlight/highlight1.jpeg'
-	import highlight2 from '$lib/assets/images/highlight/highlight2.jpeg'
-	import highlight3 from '$lib/assets/images/highlight/highlight3.jpeg'
-	import highlight4 from '$lib/assets/images/highlight/highlight4.jpeg'
+	import highlight1 from '$lib/assets/images/highlight/highlight1.jpeg';
+	import highlight2 from '$lib/assets/images/highlight/highlight2.jpeg';
+	import highlight3 from '$lib/assets/images/highlight/highlight3.jpeg';
+	import highlight4 from '$lib/assets/images/highlight/highlight4.jpeg';
 
 	const options = {
 		perMove: 1,

@@ -1,10 +1,8 @@
-import ratnaTowerThumbnail from '$lib/assets/images/projects/ratna-tower/thumbnail.jpeg'
-import ratnaTowerWalkthroughImg from '$lib/assets/images/projects/ratna-tower/walkthrough.jpeg'
-import ratnaTowerMasterPlan from '$lib/assets/images/projects/ratna-tower/master-plan.jpeg'
-import ratnaTowerFloorPlan from '$lib/assets/images/projects/ratna-tower/floor-plan.jpeg'
-import ratnaTowerBedroom from '$lib/assets/images/projects/ratna-tower/bedroom.jpeg'
-
-
+import ratnaTowerThumbnail from '$lib/assets/images/projects/ratna-tower/thumbnail.jpeg';
+import ratnaTowerWalkthroughImg from '$lib/assets/images/projects/ratna-tower/walkthrough.jpeg';
+import ratnaTowerMasterPlan from '$lib/assets/images/projects/ratna-tower/master-plan.jpeg';
+import ratnaTowerFloorPlan from '$lib/assets/images/projects/ratna-tower/floor-plan.jpeg';
+import ratnaTowerBedroom from '$lib/assets/images/projects/ratna-tower/bedroom.jpeg';
 
 export const projects = [
 	{
@@ -43,9 +41,7 @@ export const projects = [
 		neighbourhood:
 			'Located in the prime location of Pushpanjali Sector 44, Noida, this address offers seamless access to Noida Golf Course Road and the Botanical Garden.',
 		time_of_possession: 'January 2030',
-		images: [
-			ratnaTowerThumbnail
-		],
+		images: [ratnaTowerThumbnail],
 		walkthrough: {
 			image: ratnaTowerWalkthroughImg,
 			video: 'https://www.youtube.com/watch?v=OUQhiLpHYw4'

@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>CONTACT | Pushpanjali Construction - Building Excellence with Precision</title>
+</svelte:head>
+
 <main>
 	<div class="page-heading-wrapper contact-header">
 		<div class="container">

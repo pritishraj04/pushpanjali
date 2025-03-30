@@ -1,5 +1,5 @@
 <script>
-	import logoWhite from '$lib/assets/images/logow.svg'
+	import logoWhite from '$lib/assets/images/logow.svg';
 </script>
 
 <footer>
@@ -11,20 +11,20 @@
 				</a>
 				<p class="footer-description section-description">
 					A home is not just an investment it's an emotion. A collection of wishes an individual
-					dreams to have. We at Pushpanjali understands the real value of what HOME means. A home is not
-					just an investment it's an emotion. A collection of wishes an individual dreams to have.
-					We at Pushpanjali understands the real value of what HOME means. A home is not just an
-					investment it's an emotion. A collection of wishes an individual dreams to have. We at
+					dreams to have. We at Pushpanjali understands the real value of what HOME means. A home is
+					not just an investment it's an emotion. A collection of wishes an individual dreams to
+					have. We at Pushpanjali understands the real value of what HOME means. A home is not just
+					an investment it's an emotion. A collection of wishes an individual dreams to have. We at
 					Pushpanjali understands the real value of what HOME means.A home is not just an investment
 					it's an emotion. A collection of wishes an individual dreams to have. We at Pushpanjali
 					understands the real value of what HOME means
 				</p>
 				<p class="footer-description section-description">
 					A home is not just an investment it's an emotion. A collection of wishes an individual
-					dreams to have. We at Pushpanjali understands the real value of what HOME means. A home is not
-					just an investment it's an emotion. A collection of wishes an individual dreams to have.
-					We at Pushpanjali understands the real value of what HOME means. A home is not just an
-					investment it's an emotion.
+					dreams to have. We at Pushpanjali understands the real value of what HOME means. A home is
+					not just an investment it's an emotion. A collection of wishes an individual dreams to
+					have. We at Pushpanjali understands the real value of what HOME means. A home is not just
+					an investment it's an emotion.
 				</p>
 			</div>
 			<div class="footer-navigations">
@@ -120,10 +120,11 @@
 		max-width: unset;
 	}
 	.footer-navigation-header {
-		color: #f8f8f8;
-		font-size: 1.2rem;
-		margin-bottom:0.4rem;
-		font-weight: 500;
+		color: #767676;
+		font-size: 0.8rem;
+		margin-bottom: 0.4rem;
+		font-weight: 300;
+		text-transform: uppercase;
 	}
 	.footer-navigations {
 		display: grid;
@@ -131,7 +132,10 @@
 		margin-block: 2rem 5rem;
 	}
 	.footer-nav-link {
-		font-size: 0.9rem;
+		font-size: 1rem;
+	}
+	.footer-nav-link:hover {
+		color: #8f8f8f;
 	}
 	.copyright {
 		color: #f8f8f8;

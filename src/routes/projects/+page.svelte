@@ -2,11 +2,10 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ProjectFilter from '$lib/components/ProjectFilter.svelte';
 
-	import header from '$lib/assets/images/projects/header.jpeg'
+	import header from '$lib/assets/images/projects/header.jpeg';
 
 	const { data } = $props();
 	const projects = data.projects;
-	$inspect(projects);
 
 	let searchTerm = $state('');
 	let filters = $state({
@@ -37,7 +36,6 @@
 			return matchesSearch && matchesCategory && matchesStatus && matchesLocation && matchesPrice;
 		});
 	};
-	$inspect(filteredProjects);
 
 	let toggleOverlay = $state(projects.map(() => false));
 
@@ -57,6 +55,10 @@
 		return priceRanges.find((r) => r.label === label);
 	}
 </script>
+
+<svelte:head>
+	<title>PROJECTS | Pushpanjali Construction - Building Excellence with Precision</title>
+</svelte:head>
 
 <main>
 	<div class="page-heading-wrapper projects-header" style={`background-image: url(${header});`}>

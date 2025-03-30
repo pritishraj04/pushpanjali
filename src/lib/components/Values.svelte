@@ -1,11 +1,10 @@
 <script>
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-	import valuesLogo from '$lib/assets/images/rtp.svg'
-	import value1 from '$lib/assets/images/value/value1.jpeg'
-	import value2 from '$lib/assets/images/value/value2.jpeg'
-	import value3 from '$lib/assets/images/value/value3.jpeg'
-	import value4 from '$lib/assets/images/value/value4.jpeg'
-
+	import valuesLogo from '$lib/assets/images/rtp.svg';
+	import value1 from '$lib/assets/images/value/value1.jpeg';
+	import value2 from '$lib/assets/images/value/value2.jpeg';
+	import value3 from '$lib/assets/images/value/value3.jpeg';
+	import value4 from '$lib/assets/images/value/value4.jpeg';
 
 	const options = {
 		perPage: 4,

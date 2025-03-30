@@ -1,5 +1,5 @@
 <script>
-	import plusLogo from '$lib/assets/images/propertiesb.svg'
+	import plusLogo from '$lib/assets/images/propertiesb.svg';
 </script>
 
 <section class="section-padding section-alt">

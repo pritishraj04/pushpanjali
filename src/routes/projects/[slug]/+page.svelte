@@ -14,6 +14,10 @@
 	import Rera from '$lib/components/RERA.svelte';
 </script>
 
+<svelte:head>
+	<title>{project.name} | Pushpanjali Construction - Building Excellence with Precision</title>
+</svelte:head>
+
 <main>
 	<div
 		class="hero-wrapper projects-details-header"

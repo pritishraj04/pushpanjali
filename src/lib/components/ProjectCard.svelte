@@ -8,7 +8,11 @@
 
 <div class="project-card">
 	<div class="project-image-container">
-		<img class="project-card-image" src={project.images[0] ? project.images[0] : "https://placehold.co/1200x700/png"} alt={project.name} />
+		<img
+			class="project-card-image"
+			src={project.images[0] ? project.images[0] : 'https://placehold.co/1200x700/png'}
+			alt={project.name}
+		/>
 		<div class="project-overlay" class:active={toggleOverlay[index]}>
 			<h5 class="project-overlay-heading">Connect with us to enquire about this property</h5>
 			<div class="project-overlay-ctas">

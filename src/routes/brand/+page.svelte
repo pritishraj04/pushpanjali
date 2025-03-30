@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>BRAND STORY | Pushpanjali Construction - Building Excellence with Precision</title>
+</svelte:head>
 <main>
 	<div class="page-heading-wrapper brand-header">
 		<div class="container">

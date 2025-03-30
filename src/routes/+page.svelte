@@ -7,12 +7,12 @@
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import Ucta from '$lib/components/Ucta.svelte';
 
-	import hero1 from '$lib/assets/images/hero/hero1.jpeg'
-	import hero2 from '$lib/assets/images/hero/hero2.jpeg'
-	import hero3 from '$lib/assets/images/hero/hero3.jpeg'
-	import herom1 from '$lib/assets/images/hero/herom1.jpeg'
-	import herom2 from '$lib/assets/images/hero/herom2.jpeg'
-	import herom3 from '$lib/assets/images/hero/herom3.jpeg'
+	import hero1 from '$lib/assets/images/hero/hero1.jpeg';
+	import hero2 from '$lib/assets/images/hero/hero2.jpeg';
+	import hero3 from '$lib/assets/images/hero/hero3.jpeg';
+	import herom1 from '$lib/assets/images/hero/herom1.jpeg';
+	import herom2 from '$lib/assets/images/hero/herom2.jpeg';
+	import herom3 from '$lib/assets/images/hero/herom3.jpeg';
 
 	const options = {
 		arrows: false,
@@ -44,6 +44,10 @@
 </script>
 
 <svelte:window bind:innerWidth={x} />
+
+<svelte:head>
+	<title>HOME | Pushpanjali Construction - Building Excellence with Precision</title>
+</svelte:head>
 
 <main>
 	<div class="container-fluid">

@@ -49,12 +49,7 @@
 		left: -12px;
 		right: -12px;
 		bottom: -12px;
-		background: linear-gradient(
-			to right,
-			rgb(234, 201, 17),
-			orange,
-			yellow
-		); /* Rainbow gradient */
+		background: linear-gradient(to right, rgb(234, 201, 17), orange, yellow); /* Rainbow gradient */
 		border-radius: 50%; /* Makes it a circle */
 		z-index: -1; /* Places the ring behind the button */
 
