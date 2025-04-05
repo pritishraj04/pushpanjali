@@ -151,4 +151,18 @@
         height: auto;
         border-radius: 8px;
     }
+	@media (max-width: 768px) {
+        .zigzag-item {
+            flex-direction: column;
+        }
+
+        .zigzag-item.reverse {
+            flex-direction: column;
+        }
+
+        .zigzag-content,
+        .zigzag-image {
+            padding: 0.5rem;
+        }
+    }
 </style>
