@@ -34,6 +34,7 @@ ol[data-role='list'] {
 html,
 html:focus-within {
 	scroll-behavior: smooth;
+	transition: all 0.5s ease-in-out;
 }
 html.smoothscroll {
 	scroll-behavior: smooth;
@@ -68,7 +69,7 @@ input[type='email'] {
 	font-size: 18px;
 	line-height: 1.27;
 	background-color: #f9f9f9;
-	transition: border-color 0.3s ease;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type='text']:focus,
@@ -77,6 +78,7 @@ input[type='email']:focus {
 	border-color: #888;
 	outline: none;
 	background-color: #fff;
+	box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
 }
 
 img,
@@ -103,12 +105,23 @@ svg {
 	font-weight: 300;
 	font-size: 1.2rem;
 	color: #1e3a8a;
+	transition: color 0.3s ease;
 }
+
+.link:hover {
+	color: #3b82f6;
+}
+
 .link-inverted {
 	text-decoration: none;
 	font-weight: 300;
 	font-size: 1.2rem;
 	color: #e6e8f0;
+	transition: color 0.3s ease;
+}
+
+.link-inverted:hover {
+	color: #cbd5e1;
 }
 
 .container {
@@ -197,19 +210,34 @@ svg {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.6rem;
-	transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+	transform: scale(1.05);
 }
 
 .btn-primary {
 	background-color: #ddbc19;
 	color: #fff;
 }
+
+.btn-primary:hover {
+	background-color: #caa817;
+}
+
 .btn-secondary {
 	position: relative;
 	background-color: transparent;
 	color: #000;
 	border: 3px double #ddbc19;
 }
+
+.btn-secondary:hover {
+	background-color: #ddbc19;
+	color: #fff;
+}
+
 .btn-skeleton {
 	background: transparent;
 	padding: 0;

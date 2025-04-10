@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="contact-grid">
 				<div class="contact-info">
-					<h2 class="section-heading">Get in Touch</h2>
+					<h2 class="section-heading sh-b1">Get in Touch</h2>
 					<p class="section-description">Feel free to contact us through any of the following methods:</p>
 					<ul>
 						<li><strong>Phone:</strong> +1 (123) 456-7890</li>
@@ -23,7 +23,7 @@
 					</ul>
 				</div>
 				<div class="contact-form">
-					<h2 class="section-heading">Send Us a Message</h2>
+					<h2 class="section-heading sh-b1">Send Us a Message</h2>
 					<form on:submit|preventDefault={handleSubmit}>
 						<div class="form-group">
 							<input type="text" placeholder="Your Name" required />
