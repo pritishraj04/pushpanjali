@@ -19,7 +19,7 @@
 	<!-- Category Filter -->
 	<div class="project-filter-item">
 		<label for="category">Category:</label>
-		<select id="category" bind:value={filters.category} onchange={filteredProjects}>
+		<select id="category" bind:value={filters.category} onchange={filteredProjects} class="animated-select">
 			<option value="">All Categories</option>
 			{#each categories as category}
 				<option value={category}>{category}</option>
@@ -30,7 +30,7 @@
 	<!-- Status Filter -->
 	<div class="project-filter-item">
 		<label for="status">Status:</label>
-		<select id="status" bind:value={filters.status} onchange={filteredProjects}>
+		<select id="status" bind:value={filters.status} onchange={filteredProjects} class="animated-select">
 			<option value="">All Statuses</option>
 			{#each statusOptions as status}
 				<option value={status}>{status.toUpperCase()}</option>
@@ -41,7 +41,7 @@
 	<!-- Location Filter -->
 	<div class="project-filter-item">
 		<label for="location">Location:</label>
-		<select id="location" bind:value={filters.location} onchange={filteredProjects}>
+		<select id="location" bind:value={filters.location} onchange={filteredProjects} class="animated-select">
 			<option value="">All Locations</option>
 			{#each locations as location}
 				<option value={location}>{location}</option>
@@ -52,7 +52,7 @@
 	<!-- Price Filter -->
 	<div class="project-filter-item">
 		<label for="price">Price Range:</label>
-		<select id="price" bind:value={filters.price} onchange={filteredProjects}>
+		<select id="price" bind:value={filters.price} onchange={filteredProjects} class="animated-select">
 			<option value="">All Prices</option>
 			{#each priceRanges as range}
 				<option value={range.label}>{range.label}</option>
@@ -61,7 +61,7 @@
 	</div>
 
 	<!-- Reset Button -->
-	<div class="project-filter-item">
+	<div class="project-filter-item reset-container">
 		<button class="reset-btn" onclick={resetFilters} aria-label="Reset all filters">
 			Reset Filters
 		</button>
@@ -71,12 +71,12 @@
 <style>
 	.project-filter-bar {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		gap: 1rem;
-		padding: 1.5rem;
-		background: #ffffff;
-		border-radius: 8px;
-		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		padding: 2rem;
+		background: #f5f3f7;
+		border-radius: 16px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 		margin-bottom: 2rem;
 	}
 
@@ -86,33 +86,52 @@
 		gap: 0.5rem;
 	}
 
-	select {
+	label {
+		font-weight: bold;
+		color: #5e4b7b;
+	}
+
+	.animated-select {
 		padding: 0.75rem;
-		border: 1px solid #e0e0e0;
-		border-radius: 6px;
+		border: 1px solid #d3cce3;
+		border-radius: 8px;
 		background: white;
 		font-size: 1rem;
 		width: 100%;
 		appearance: none;
-		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235e4b7b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
 		background-repeat: no-repeat;
-		background-position: right 0.75rem center;
+		background-position: right 1rem center;
 		background-size: 1.2em;
+		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.animated-select:focus {
+		border-color: #8a6bbd;
+		box-shadow: 0 0 5px rgba(138, 107, 189, 0.3);
+		outline: none;
+	}
+
+	.reset-container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
 	.reset-btn {
 		padding: 0.75rem 1.5rem;
-		background: #f8f9fa;
-		border: 1px solid #e0e0e0;
-		border-radius: 6px;
+		background: #eae6f0;
+		color: #5e4b7b;
+		border: 1px solid #d3cce3;
+		border-radius: 8px;
 		cursor: pointer;
-		transition: all 0.2s ease;
-		align-self: flex-end;
+		transition: background-color 0.2s ease, color 0.2s ease;
+		font-weight: bold;
 	}
 
 	.reset-btn:hover {
-		background: #e9ecef;
-		border-color: #d0d0d0;
+		background: #d3cce3;
+		color: #4a3a5e;
 	}
 
 	@media (max-width: 768px) {
@@ -120,9 +139,12 @@
 			grid-template-columns: 1fr;
 		}
 
+		.reset-container {
+			justify-content: center;
+		}
+
 		.reset-btn {
 			width: 100%;
-			align-self: center;
 		}
 	}
 </style>

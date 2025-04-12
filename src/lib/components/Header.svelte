@@ -80,9 +80,12 @@
 	}
 	.nav-link {
 		text-transform: uppercase;
-		font-size: 1.2rem;
+		font-size: 1.125rem;
 	}
 	@media screen and (max-width: 820px) {
+		.nav-link {
+		font-size: 1rem;
+	}
 		.header-wrapper {
 			padding-block: 1rem;
 		}
@@ -98,6 +101,7 @@
 			background-color: rgba(22, 22, 23, 0.8);
 			backdrop-filter: saturate(180%) blur(20px);
 			-webkit-backdrop-filter: saturate(180%) blur(20px);
+			isolation: isolate;
 			padding: 2rem;
 			transition: all 0.3s ease-in-out;
 		}

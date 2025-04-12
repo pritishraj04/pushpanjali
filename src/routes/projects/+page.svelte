@@ -38,7 +38,6 @@
 	};
 
 	let toggleOverlay = $state(projects.map(() => false));
-
 	const priceRanges = [
 		{ label: 'Below 1 Cr', max: 10_000_000 },
 		{ label: '1 Cr - 3 Cr', min: 10_000_000, max: 30_000_000 },
@@ -91,21 +90,33 @@
 
 <style>
 	.project-search-input {
-		--svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32px' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10.783 18.828a8.05 8.05 0 0 0 7.439-4.955a8.03 8.03 0 0 0-1.737-8.765a8.045 8.045 0 0 0-13.735 5.68c0 2.131.846 4.174 2.352 5.681a8.05 8.05 0 0 0 5.68 2.359m5.706-2.337l4.762 4.759'/%3E%3C/svg%3E");
+		--svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20px' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10.783 18.828a8.05 8.05 0 0 0 7.439-4.955a8.03 8.03 0 0 0-1.737-8.765a8.045 8.045 0 0 0-13.735 5.68c0 2.131.846 4.174 2.352 5.681a8.05 8.05 0 0 0 5.68 2.359m5.706-2.337l4.762 4.759'/%3E%3C/svg%3E");
 		background-color: #fff;
 		background-image: var(--svg);
 		background-position: center left 16px;
 		background-repeat: no-repeat;
-		border: 0;
-		border-radius: 4px;
-		box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.15);
-		color: #666;
+		border: 1px solid #d3cce3;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		color: #5e4b7b;
 		margin-bottom: 14px;
-		font-size: 18px;
-		height: 60px;
-		line-height: 1.27;
-		padding-left: 60px;
+		font-size: 1rem;
+		height: 50px;
+		line-height: 1.5;
+		padding-left: 50px;
 		width: 100%;
+		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.project-search-input::placeholder {
+		color: #999;
+		font-style: italic;
+	}
+
+	.project-search-input:focus {
+		border-color: #8a6bbd;
+		box-shadow: 0 0 5px rgba(138, 107, 189, 0.3);
+		outline: none;
 	}
 
 	.project-list {

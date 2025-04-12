@@ -12,4 +12,18 @@
 </section>
 
 <style>
+	.neighourhood {
+		padding: 2rem 1.5rem;
+	}
+
+	.section-description {
+		max-width: 800px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.6;
+		color: #555;
+	}
+
+	.project-nearby-places {
+		margin-top: 1.5rem;
+	}
 </style>

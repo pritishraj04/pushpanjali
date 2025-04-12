@@ -42,7 +42,7 @@
 	.amenity-title {
 		margin-block: 0.6rem;
 		font-weight: bold;
-		font-size: 1.2;
+		font-size: 1.5rem;
 		line-height: 1.5;
 		letter-spacing: 0.05em;
 		color: #363636;
@@ -50,10 +50,18 @@
 	}
 	.amenity-description {
 		margin-block: 0.5rem;
-		font-size: 1.1;
+		font-size: 1.125rem;
 		line-height: 1.5;
 		letter-spacing: 0.05em;
 		color: #535353;
 		text-align: center;
+	}
+	@media screen and (max-width: 820px) {
+		.amenity-title {
+			font-size: 1.15rem;
+		}
+		.amenity-description {
+			font-size: 1rem;
+		}
 	}
 </style>

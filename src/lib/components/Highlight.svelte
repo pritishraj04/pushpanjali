@@ -112,7 +112,7 @@
 
 <style>
 	.highlight-project-heading {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		text-transform: uppercase;
 		text-align: center;
 		margin-block: 3rem 1rem;

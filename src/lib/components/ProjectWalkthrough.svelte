@@ -12,41 +12,47 @@
 
 <style>
 	.project-description {
-		max-width: 1200px;
+		max-width: 800px;
 		margin-inline: auto;
 		text-align: center;
-		margin-bottom: 20px;
-		font-size: 1.2rem;
-		line-height: 1.2;
-		color: #797979;
+		margin-bottom: 30px;
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: #555;
+		letter-spacing: 0.5px;
 	}
 	.project-walkthrough {
 		width: 100%;
-		height: 500px;
+		height: 450px;
 		background-position: center;
 		background-size: cover;
 		display: flex;
 		justify-content: center;
-		align-items: end;
+		align-items: center;
 	}
 	.walkthrough-btn {
 		margin-bottom: 20px;
-		font-size: 1.2rem;
-		padding: 10px 20px;
+		font-size: 1rem;
+		padding: 12px 24px;
 		border: none;
 		background-color: #111;
 		color: #fff;
 		text-decoration: none;
 		cursor: pointer;
 		border-radius: 5px;
-		transition: background-color 0.3s ease;
+		transition: background-color 0.3s ease, transform 0.3s ease;
 	}
 	.walkthrough-btn:hover {
 		background-color: rgb(114, 114, 114);
+		transform: scale(1.05);
 	}
 	@media (max-width: 768px) {
 		.project-description {
 			font-size: 1rem;
+			margin-bottom: 20px;
+		}
+		.project-walkthrough {
+			height: 300px;
 		}
 	}
 </style>

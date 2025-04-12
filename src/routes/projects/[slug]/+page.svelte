@@ -21,7 +21,8 @@
 <main>
 	<div
 		class="hero-wrapper projects-details-header"
-		style={`background-image: url(${getHeaderImage(project)});`}
+		style={`background-image: 
+			url(${getHeaderImage(project)});`}
 	>
 		<div class="container">
 			<div class="project-details">
@@ -29,7 +30,7 @@
 				<h5 class="project-location">{project.location}, {project.city}</h5>
 				<div class="project-additionals">
 					<p class="project-price">{getPrice(project)}</p>
-					<p class="project-possession"><strong>Possession</strong> {project.time_of_possession}</p>
+					<p class="project-possession"><strong>Possession:</strong> {project.time_of_possession}</p>
 					<p class="project-bhk">
 						{#each project.prices as price, index}
 							{price.name}
@@ -68,55 +69,70 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		display: flex;
+		align-items: flex-end;
+		padding: 2rem;
+		color: #fff;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 	}
-	/* .projects-details-header {
-		padding-block: 600px 60px;
-	} */
 
 	.project-details {
-		position: absolute;
-		bottom: 4rem;
-		background-color: hsla(0, 0%, 0%, 0.301);
-		padding: 0.8rem 2rem;
-		display: flex;
-		flex-direction: column;
-		gap: 4px;
-		margin-bottom: 0;
-		margin-right: 7rem;
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(8px);
+		padding: 1.5rem;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		max-width: 600px;
 	}
+
 	.project-name {
-		font-size: 1.4rem;
-		font-weight: 600;
-		line-height: 1.3;
-		color: #f1f1f1;
-	}
-	.project-location {
-		font-size: 1rem;
+		font-size: 1.6rem;
 		font-weight: 500;
-		line-height: 1.3;
-		color: #e6e6e6;
+		margin-bottom: 0.3rem;
+		color: #f1f1f1;
+		letter-spacing: 0.2px;
 	}
+
+	.project-location {
+		font-size: 0.9rem;
+		font-weight: 400;
+		margin-bottom: 0.7rem;
+		color: #cccccc;
+	}
+
 	.project-additionals {
 		display: flex;
-		gap: 10px;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+		font-size: 0.85rem;
+		color: #dcdcdc;
 	}
-	.project-additionals *:not(:last-child) {
-		padding-right: 10px;
-		border-right: #e0e0e0 solid 1px;
+
+	.project-additionals p {
+		margin: 0;
 	}
+
 	.project-price {
-		font-size: 0.9rem;
-		font-weight: 400;
-		color: #e0e0e0;
+		font-weight: 500;
+		color: #ffcc00;
+		font-size: 0.95rem;
 	}
-	.project-possession {
-		font-size: 0.9rem;
-		font-weight: 400;
-		color: #e0e0e0;
+
+	.project-possession strong {
+		color: #1dbf73;
+		font-weight: 500;
 	}
+
 	.project-bhk {
-		font-size: 0.9rem;
-		font-weight: 400;
-		color: #e0e0e0;
+		font-style: italic;
+		color: #b0b0b0;
+	}
+
+	.container {
+		margin-top: 2rem;
+	}
+
+	.container-fluid {
+		margin-top: 2rem;
 	}
 </style>

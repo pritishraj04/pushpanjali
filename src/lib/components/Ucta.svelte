@@ -98,6 +98,7 @@
 		color: #f0f0f0;
 		text-transform: uppercase;
 		font-weight: 400;
+		font-size: 1.125rem;
 		padding: 0.5rem;
 		letter-spacing: 2px;
 		white-space: nowrap;
@@ -132,6 +133,9 @@
 		}
 		.ucta-menu {
 			bottom: 5rem;
+		}
+		.ucta-menu-item a {
+			font-size: 1rem;
 		}
 	}
 </style>
