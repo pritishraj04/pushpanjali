@@ -54,7 +54,15 @@ export const projects = [
 			{
 				name: 'Floor Plan',
 				image: ratnaTowerFloorPlan
-			}
+			},
+			{
+				name: 'Side Plan',
+				image: ratnaTowerFloorPlan
+			},
+			{
+				name: 'Main Plan',
+				image: ratnaTowerFloorPlan
+			},
 		],
 		amenities: [
 			{
@@ -87,6 +95,21 @@ export const projects = [
 			{
 				id: 2,
 				title: 'Bedroom 1',
+				image: ratnaTowerFloorPlan
+			},
+			{
+				id: 3,
+				title: 'Bedroom 2',
+				image: ratnaTowerFloorPlan
+			},
+			{
+				id: 4,
+				title: 'Bedroom 3',
+				image: ratnaTowerFloorPlan
+			},
+			{
+				id: 5,
+				title: 'Bedroom 4',
 				image: ratnaTowerFloorPlan
 			}
 		],

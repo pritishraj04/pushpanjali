@@ -56,7 +56,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 100;
-		background-image: linear-gradient(180deg, rgba(22, 22, 23, 0.5), rgba(22, 22, 23, 0));
+		background-image: linear-gradient(180deg, rgba(22, 22, 23, 0.5) 0%, rgba(22, 22, 23, 0) 100%);
 	}
 	.header-solid-bg {
 		background-color: rgba(22, 22, 23, 0.8);

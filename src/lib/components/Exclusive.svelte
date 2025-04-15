@@ -65,7 +65,6 @@
 		background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 		color: #ffffff;
 		padding: 4rem 1rem;
-		border-radius: 12px;
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 	}
 	.exclusive-description {

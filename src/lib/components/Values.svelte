@@ -7,12 +7,13 @@
 	import value4 from '$lib/assets/images/value/value4.jpeg';
 
 	const options = {
-		perPage: 4,
+		perPage: 3,
 		perMove: 1,
 		arrows: false,
 		pagination: false,
-		gap: '3rem',
-		speed: 2000,
+		gap: '1rem',
+		type: 'loop',
+		focus: 'center',
 		breakpoints: {
 			820: {
 				perPage: 1,
@@ -42,8 +43,23 @@
 			id: 4,
 			src: value4,
 			alt: 'Img 4'
+		},
+		{
+			id: 5,
+			src: value4,
+			alt: 'Img 5'
 		}
 	];
+
+	let splideInstance;
+
+	function goToNext() {
+		splideInstance.go('>');
+	}
+
+	function goToPrev() {
+		splideInstance.go('<');
+	}
 </script>
 
 <section class="section-padding">
@@ -58,13 +74,22 @@
 			</div>
 			<div class="value-carousel-wrapper">
 				<h3 class="section-heading sh-b3">Value we preserve</h3>
-				<Splide {options} aria-label="My Favorite Images">
+				<Splide
+					{options}
+					aria-label="My Favorite Images"
+					class="custom-splide"
+					bind:this={splideInstance}
+				>
 					{#each valueCarousel as slide}
 						<SplideSlide>
-							<img src={slide.src} alt={slide.alt} />
+							<img src={slide.src} alt={slide.alt} class="slide-image" />
 						</SplideSlide>
 					{/each}
 				</Splide>
+				<div class="custom-navigation">
+					<button class="nav-btn prev-btn" on:click={goToPrev}>&lt;</button>
+					<button class="nav-btn next-btn" on:click={goToNext}>&gt;</button>
+				</div>
 				<div class="value-cta">
 					<a href="/brand" class="btn btn-secondary">Brand Story</a>
 				</div>
@@ -90,5 +115,30 @@
 	.value-cta {
 		margin-block: 2.4rem 0;
 		text-align: center;
+	}
+
+	.slide-image {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.custom-navigation {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.nav-btn {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	.nav-btn:hover {
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 </style>

@@ -358,3 +358,24 @@ svg {
 		background-color: #ffcc00;
 		transform: scale(1.1);
 	}
+	.custom-splide .splide__slide {
+		opacity: 0.4; /* Grey out non-center slides */
+		transform: scale(0.9); /* Make non-center slides smaller */
+		transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
+	}
+
+	.custom-splide .splide__slide.is-active {
+		opacity: 1; /* Highlight the center slide */
+		transform: scale(1); /* Make the center slide larger */
+	}
+
+
+	.gallery-slider .splide__slide {
+		opacity: 0.4; /* Grey out non-center slides */
+		transform: scale(0.9); /* Make non-center slides smaller */
+		transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
+	}
+	.gallery-slider .splide__slide.is-active {
+		opacity: 1; /* Highlight the center slide */
+		transform: scale(1); /* Make the center slide larger */
+	}
