@@ -1,8 +1,19 @@
 import ratnaTowerThumbnail from '$lib/assets/images/projects/ratna-tower/thumbnail.jpeg';
+import ratnaTowerThumbnailMobile from '$lib/assets/images/projects/ratna-tower/thumbnail-m.jpeg';
 import ratnaTowerWalkthroughImg from '$lib/assets/images/projects/ratna-tower/walkthrough.jpeg';
-import ratnaTowerMasterPlan from '$lib/assets/images/projects/ratna-tower/master-plan.jpeg';
-import ratnaTowerFloorPlan from '$lib/assets/images/projects/ratna-tower/floor-plan.jpeg';
-import ratnaTowerBedroom from '$lib/assets/images/projects/ratna-tower/bedroom.jpeg';
+import ratnaTowerFloorPlan from '$lib/assets/images/projects/ratna-tower/floor-plan.png';
+
+import a1 from '$lib/assets/images/projects/ratna-tower/a1.jpeg';
+import a2 from '$lib/assets/images/projects/ratna-tower/a2.jpeg';
+import a3 from '$lib/assets/images/projects/ratna-tower/a3.jpeg';
+import a4 from '$lib/assets/images/projects/ratna-tower/a4.jpeg';
+import a5 from '$lib/assets/images/projects/ratna-tower/a5.jpeg';
+import a6 from '$lib/assets/images/projects/ratna-tower/a6.jpeg';
+import a7 from '$lib/assets/images/projects/ratna-tower/a7.jpeg';
+import a8 from '$lib/assets/images/projects/ratna-tower/a8.jpeg';
+import a9 from '$lib/assets/images/projects/ratna-tower/a9.jpeg';
+import a10 from '$lib/assets/images/projects/ratna-tower/a10.jpeg';
+import a11 from '$lib/assets/images/projects/ratna-tower/a11.jpeg';
 
 export const projects = [
 	{
@@ -39,30 +50,18 @@ export const projects = [
 			]
 		},
 		neighbourhood:
-			'Located in the prime location of Pushpanjali Sector 44, Noida, this address offers seamless access to Noida Golf Course Road and the Botanical Garden.',
+			'Located in the prime location of Akharaghat Road, Muzaffarpur, this address offers seamless access to key landmarks and amenities.',
 		time_of_possession: 'January 2030',
-		images: [ratnaTowerThumbnail],
+		images: [ratnaTowerThumbnail, ratnaTowerThumbnailMobile],
 		walkthrough: {
 			image: ratnaTowerWalkthroughImg,
 			video: 'https://www.youtube.com/watch?v=OUQhiLpHYw4'
 		},
 		plans: [
 			{
-				name: 'Master Plan',
-				image: ratnaTowerMasterPlan
-			},
-			{
 				name: 'Floor Plan',
 				image: ratnaTowerFloorPlan
-			},
-			{
-				name: 'Side Plan',
-				image: ratnaTowerFloorPlan
-			},
-			{
-				name: 'Main Plan',
-				image: ratnaTowerFloorPlan
-			},
+			}
 		],
 		amenities: [
 			{
@@ -90,27 +89,57 @@ export const projects = [
 			{
 				id: 1,
 				title: 'Living Room',
-				image: ratnaTowerBedroom
+				image: a1
 			},
 			{
 				id: 2,
 				title: 'Bedroom 1',
-				image: ratnaTowerFloorPlan
+				image: a2
 			},
 			{
 				id: 3,
 				title: 'Bedroom 2',
-				image: ratnaTowerFloorPlan
+				image: a3
 			},
 			{
 				id: 4,
 				title: 'Bedroom 3',
-				image: ratnaTowerFloorPlan
+				image: a4
 			},
 			{
 				id: 5,
 				title: 'Bedroom 4',
-				image: ratnaTowerFloorPlan
+				image: a5
+			},
+			{
+				id: 6,
+				title: 'Living Room',
+				image: a6
+			},
+			{
+				id: 7,
+				title: 'Bedroom 1',
+				image: a7
+			},
+			{
+				id: 8,
+				title: 'Bedroom 2',
+				image: a8
+			},
+			{
+				id: 9,
+				title: 'Bedroom 3',
+				image: a9
+			},
+			{
+				id: 10,
+				title: 'Bedroom 4',
+				image: a10
+			},
+			{
+				id: 11,
+				title: 'Bedroom 4',
+				image: a11
 			}
 		],
 		downloads: [

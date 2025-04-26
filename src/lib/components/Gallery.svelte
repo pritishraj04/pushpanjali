@@ -3,18 +3,24 @@
 	const gallery = project.gallery;
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	const options = {
-		arrows: true, // Enable arrows for better navigation
-		rewind: true,
-		type: 'loop',
-		pagination: true,
 		perPage: 3,
-		gap: -20,
-		height: '400px', // Set a uniform height for slides
-		focus: 'center', // Focus the center slide
+		perMove: 1,
+		arrows: false,
+		pagination: false,
+		gap: '-0.2rem',
+		type: 'loop',
+		focus: 'center',
+		interval: 8000,
+		flickMaxPages: 3,
+		updateOnMove: true,
+		pagination: false,
+		padding: '10%',
+		throttle: 300,
 		breakpoints: {
-			768: {
+			820: {
 				perPage: 1,
-				height: '300px' // Adjust height for smaller screens
+				type: 'loop',
+				focus: 'center'
 			}
 		}
 	};

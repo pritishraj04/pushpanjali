@@ -12,17 +12,21 @@
 	const project = data.project;
 	import { getPrice, getHeaderImage } from '$lib/utils/projectUtils.js';
 	import Rera from '$lib/components/RERA.svelte';
+	import ProjectHeadings from '$lib/components/ProjectHeadings.svelte';
+	let x = $state(0);
 </script>
 
 <svelte:head>
 	<title>{project.name} | Pushpanjali Construction - Building Excellence with Precision</title>
 </svelte:head>
 
+<svelte:window bind:innerWidth={x} />
+
 <main>
 	<div
 		class="hero-wrapper projects-details-header"
 		style={`background-image: 
-			url(${getHeaderImage(project)});`}
+			url(${x> 960 ? getHeaderImage(project, "desktop") : getHeaderImage(project, "mobile")});`}
 	>
 		<div class="container">
 			<div class="project-details">
@@ -46,6 +50,7 @@
 		</div>
 		<Ucta />
 	</div>
+	<ProjectHeadings />
 	<div class="container">
 		<ProjectWalkthrough {project} />
 		<Nebhourhood {project} />

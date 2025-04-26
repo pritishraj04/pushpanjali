@@ -11,9 +11,15 @@
 		perMove: 1,
 		arrows: false,
 		pagination: false,
-		gap: '1rem',
+		gap: '-0.2rem',
 		type: 'loop',
 		focus: 'center',
+		interval: 8000,
+		flickMaxPages: 3,
+		updateOnMove: true,
+		pagination: false,
+		padding: '10%',
+		throttle: 300,
 		breakpoints: {
 			820: {
 				perPage: 1,
