@@ -2,9 +2,11 @@
 	import HamburgerBtn from './HamburgerBtn.svelte';
 	import logo from '$lib/assets/images/logop.svg';
 	import logoWhite from '$lib/assets/images/logow.svg';
+	import Enquiry from './Enquiry.svelte';
 
 	let isMenuVisible = $state(false);
 	let y = $state(0);
+	let isPopupVisible = $state(false);
 
 	const toggleMenu = () => {
 		isMenuVisible = !isMenuVisible;
@@ -12,6 +14,10 @@
 
 	const closeMenu = () => {
 		isMenuVisible = false;
+	};
+
+	const togglePopup = () => {
+		isPopupVisible = !isPopupVisible;
 	};
 </script>
 
@@ -29,26 +35,33 @@
 					/>
 				</a>
 			</div>
-			<HamburgerBtn {isMenuVisible} {toggleMenu} />
-			<nav class="header-navigation" class:is-visible={isMenuVisible}>
-				<ul class="header-navs" data-role="list">
-					<li class="header-nav">
-						<a class="link-inverted nav-link" onclick={closeMenu} href="/brand">Brand Story</a>
-					</li>
-					<li class="header-nav">
-						<a class="link-inverted nav-link" onclick={closeMenu} href="/company">Company</a>
-					</li>
-					<li class="header-nav">
-						<a class="link-inverted nav-link" onclick={closeMenu} href="/projects">Projects</a>
-					</li>
-					<li class="header-nav">
-						<a class="link-inverted nav-link" onclick={closeMenu} href="/contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="nav-plus-cta">
+				<HamburgerBtn {isMenuVisible} {toggleMenu} />
+				<nav class="header-navigation" class:is-visible={isMenuVisible}>
+					<ul class="header-navs" data-role="list">
+						<li class="header-nav">
+							<a class="link-inverted nav-link" onclick={closeMenu} href="/brand">Brand Story</a>
+						</li>
+						<li class="header-nav">
+							<a class="link-inverted nav-link" onclick={closeMenu} href="/company">Company</a>
+						</li>
+						<li class="header-nav">
+							<a class="link-inverted nav-link" onclick={closeMenu} href="/projects">Projects</a>
+						</li>
+						<li class="header-nav">
+							<a class="link-inverted nav-link" onclick={closeMenu} href="/contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="cta-btn" onclick={togglePopup}>Get in Touch</button>
+			</div>
 		</div>
 	</div>
 </header>
+
+{#if isPopupVisible}
+	<Enquiry {togglePopup} />
+{/if}
 
 <style>
 	.header {
@@ -72,7 +85,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding-block: 1.7rem;
+		padding-top: 1.7rem;
+		padding-bottom: 1.7rem;
 	}
 	.header-navs {
 		display: flex;
@@ -82,12 +96,34 @@
 		text-transform: uppercase;
 		font-size: 1.125rem;
 	}
+	.nav-plus-cta {
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
+	}
+
+	.cta-btn {
+		background-color: #ddbc19;
+		color: white;
+		padding: 0.5rem 1rem;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 0.875rem;
+		transition: background-color 0.3s ease;
+	}
+
+	.cta-btn:hover {
+		background-color: #caa817;
+	}
+
 	@media screen and (max-width: 820px) {
 		.nav-link {
 			font-size: 1rem;
 		}
 		.header-wrapper {
-			padding-block: 1rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
 		}
 
 		.header-navigation {
@@ -113,6 +149,9 @@
 			opacity: 1;
 			pointer-events: auto;
 			transform: translateY(0);
+		}
+		.nav-plus-cta {
+			flex-direction: row-reverse;
 		}
 	}
 </style>
