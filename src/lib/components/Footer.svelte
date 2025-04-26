@@ -19,7 +19,8 @@
 						<img class="company-logo" src={logoWhite} alt="Company Logo" />
 					</a>
 					<p class="footer-description">
-						At Pushpanjali, we understand that a home is more than just an investment—it's a collection of dreams and emotions. Let us help you find the perfect place to call home.
+						At Pushpanjali, we understand that a home is more than just an investment—it's a
+						collection of dreams and emotions. Let us help you find the perfect place to call home.
 					</p>
 				</div>
 				<div class="footer-links">
@@ -67,7 +68,8 @@
 					<a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
 				</div>
 				<p class="copyright">
-					© {new Date().getFullYear()} Pushpanjali Groups. Designed by <a href="https://polardot.in" target="_blank">Polardot.in</a>.
+					© {new Date().getFullYear()} Pushpanjali Groups. Designed by
+					<a href="https://polardot.in" target="_blank">Polardot.in</a>.
 				</p>
 			</div>
 		</div>
@@ -133,13 +135,13 @@
 		font-size: 0.9rem;
 		color: #b3b3b3;
 		line-height: 1.6;
-			}
+	}
 	.footer-links {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2rem;
 		flex: 2 1 600px;
-			}
+	}
 	.footer-column {
 		flex: 1 1 200px;
 	}
@@ -183,12 +185,12 @@
 		color: #b3b3b3;
 	}
 	@media screen and (max-width: 820px) {
-		.logo{
+		.logo {
 			flex: 1 1 100%;
 			margin-bottom: 1.5rem;
 			margin-right: 0;
 		}
-	
+
 		.footer-top {
 			flex-direction: column;
 			gap: 1.5rem; /* Reduced gap between sections on mobile */

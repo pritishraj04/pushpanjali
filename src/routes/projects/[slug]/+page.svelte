@@ -26,7 +26,7 @@
 	<div
 		class="hero-wrapper projects-details-header"
 		style={`background-image: 
-			url(${x> 960 ? getHeaderImage(project, "desktop") : getHeaderImage(project, "mobile")});`}
+			url(${x > 960 ? getHeaderImage(project, 'desktop') : getHeaderImage(project, 'mobile')});`}
 	>
 		<div class="container">
 			<div class="project-details">
@@ -34,7 +34,10 @@
 				<h5 class="project-location">{project.location}, {project.city}</h5>
 				<div class="project-additionals">
 					<p class="project-price">{getPrice(project)}</p>
-					<p class="project-possession"><strong>Possession:</strong> {project.time_of_possession}</p>
+					<p class="project-possession">
+						<strong>Possession:</strong>
+						{project.time_of_possession}
+					</p>
 					<p class="project-bhk">
 						{#each project.prices as price, index}
 							{price.name}

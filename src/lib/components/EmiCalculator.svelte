@@ -24,11 +24,9 @@
 		label.style.left = `calc(${percent}% - 8px)`; // Adjust for label width
 		input.style.setProperty('--value', `${percent}%`); // Update slider color
 	}
-
 </script>
 
 <div class="calculator">
-
 	<div class="section">
 		<label for="loanAmount">Loan Amount</label>
 		<input id="loanAmount" class="loan-input" type="number" bind:value={loanAmount} min="0" />
@@ -49,7 +47,7 @@
 				step="1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
 				style="--value: 40%;"
-				/>
+			/>
 			<div class="slider-label">{advancePaymentPercent}%</div>
 		</div>
 	</div>
@@ -69,7 +67,7 @@
 				step="1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
 				style="--value: 40%;"
-				/>
+			/>
 			<div class="slider-label">{durationYears} Years</div>
 		</div>
 	</div>
@@ -89,7 +87,7 @@
 				step="0.1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
 				style="--value: 40%;"
-				/>
+			/>
 			<div class="slider-label">{interestRate}%</div>
 		</div>
 	</div>
@@ -139,7 +137,13 @@
 		width: 100%;
 		appearance: none;
 		height: 6px;
-		background: linear-gradient(to right, #e0e0e0 0%, #e0e0e0 var(--value), #f7f7f7 var(--value), #f7f7f7 100%);
+		background: linear-gradient(
+			to right,
+			#e0e0e0 0%,
+			#e0e0e0 var(--value),
+			#f7f7f7 var(--value),
+			#f7f7f7 100%
+		);
 		border-radius: 3px;
 		outline: none;
 		position: relative;
@@ -174,7 +178,9 @@
 		font-weight: bold;
 		white-space: nowrap;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-		transition: left 0.1s ease, transform 0.1s ease;
+		transition:
+			left 0.1s ease,
+			transform 0.1s ease;
 	}
 
 	.slider-container input[type='range']:hover + .slider-label {

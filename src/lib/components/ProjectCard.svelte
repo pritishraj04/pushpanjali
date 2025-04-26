@@ -8,11 +8,13 @@
 
 <div class="project-card">
 	<div class="project-image-container">
-		<img
-			class="project-card-image"
-			src={project.images[0] ? project.images[0] : 'https://placehold.co/1200x700/png'}
-			alt={project.name}
-		/>
+		<a href={`/projects/${project.slug}`}>
+			<img
+				class="project-card-image"
+				src={project.images[0] ? project.images[0] : 'https://placehold.co/1200x700/png'}
+				alt={project.name}
+			/></a
+		>
 		<div class="project-overlay" class:active={toggleOverlay[index]}>
 			<h5 class="project-overlay-heading">Connect with us to enquire about this property</h5>
 			<div class="project-overlay-ctas">
@@ -43,10 +45,12 @@
 				onclick={() => (toggleOverlay[index] = !toggleOverlay[index])}
 				><Icon icon="ei:plus" width="32" height="32" /></button
 			>
-			<h5 class="project-card-location">{project.location}, {project.city}</h5>
-			<h3 class="project-card-title">{project.name}</h3>
+			<a href={`/projects/${project.slug}`}>
+				<h5 class="project-card-location">{project.location}, {project.city}</h5>
+				<h3 class="project-card-title">{project.name}</h3></a
+			>
 		</div>
-		<div class="project-status">
+		<a href={`/projects/${project.slug}`} class="project-status">
 			<span class="status-icon">
 				<Icon
 					icon={getStatus(project).icon}
@@ -58,15 +62,15 @@
 			<p class="status-text">
 				{getStatus(project).name}
 			</p>
-		</div>
-		<div class="price-possession">
+		</a>
+		<a href={`/projects/${project.slug}`} class="price-possession">
 			<span class="price-possession-amount">{getPrice(project)} |</span>
 			<span class="price-possession-status">
 				<span class="possession-title"> Possession Date</span>
 				<span class="possession-time">{project.time_of_possession}</span>
 			</span>
-		</div>
-		<div class="bhk">
+		</a>
+		<a href={`/projects/${project.slug}`} class="bhk">
 			{#each project.prices as price, index}
 				{price.name}
 				{#if index < project.prices.length - 2}
@@ -75,9 +79,9 @@
 					&amp;&nbsp;
 				{/if}
 			{/each}
-		</div>
+		</a>
 		<a href={`/projects/${project.slug}`} class="btn btn-skeleton veiw-project"
-			>View Project <Icon icon="ant-design:double-right-outlined" width="14" height="14" /></a
+			>Viw Project <Icon icon="ant-design:double-right-outlined" width="14" height="14" /></a
 		>
 	</div>
 </div>

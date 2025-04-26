@@ -8,7 +8,8 @@
 			<div class="exclusive-top">
 				<h2 class="section-heading accent sh-b1">Pushpanjali Exclusive Features</h2>
 				<p class="exclusive-description section-description">
-					Discover a lifestyle that blends luxury, comfort, and innovation. Pushpanjali offers you a home that stands apart with unmatched features and timeless elegance.
+					Discover a lifestyle that blends luxury, comfort, and innovation. Pushpanjali offers you a
+					home that stands apart with unmatched features and timeless elegance.
 				</p>
 			</div>
 			<div class="exclusive-middle">
@@ -50,7 +51,8 @@
 			<div class="exclusive-bottom">
 				<h2 class="section-heading accent sh-b1">Director's Message</h2>
 				<p class="exclusive-description section-description">
-					"A home is not just an investment; it's an emotion. At Pushpanjali, we redefine the meaning of home by delivering unparalleled living experiences."
+					"A home is not just an investment; it's an emotion. At Pushpanjali, we redefine the
+					meaning of home by delivering unparalleled living experiences."
 				</p>
 				<div class="exclusive-cta">
 					<a href="/about" class="btn btn-primary">Learn More About Us</a>
@@ -122,7 +124,9 @@
 		border-radius: 4px;
 		text-decoration: none;
 		font-weight: 600;
-		transition: background-color 0.3s ease, transform 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			transform 0.3s ease;
 	}
 	.btn-primary:hover {
 		background-color: #e6c200;

@@ -89,36 +89,44 @@
 	</section>
 
 	<section class="brand-zigzag section-padding">
-        <div class="container">
-            <div class="zigzag-item">
-                <div class="zigzag-content">
-                    <h2 class="zigzag-heading sh-b1">Innovative Designs</h2>
-                    <p class="section-description">We bring creativity and functionality together to create innovative designs that stand out.</p>
-                </div>
-                <div class="zigzag-image">
-                    <img src="https://placehold.co/600x400/png" alt="Innovative Designs" />
-                </div>
-            </div>
-            <div class="zigzag-item reverse">
-                <div class="zigzag-content">
-                    <h2 class="zigzag-heading sh-b1">Sustainable Practices</h2>
-                    <p class="section-description">Our commitment to sustainability ensures that our projects are environmentally friendly and future-ready.</p>
-                </div>
-                <div class="zigzag-image">
-                    <img src="https://placehold.co/600x400/png" alt="Sustainable Practices" />
-                </div>
-            </div>
-            <div class="zigzag-item">
-                <div class="zigzag-content">
-                    <h2 class="zigzag-heading sh-b1">Customer Satisfaction</h2>
-                    <p class="section-description">We prioritize our customers' needs and deliver projects that exceed expectations.</p>
-                </div>
-                <div class="zigzag-image">
-                    <img src="https://placehold.co/600x400/png" alt="Customer Satisfaction" />
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="container">
+			<div class="zigzag-item">
+				<div class="zigzag-content">
+					<h2 class="zigzag-heading sh-b1">Innovative Designs</h2>
+					<p class="section-description">
+						We bring creativity and functionality together to create innovative designs that stand
+						out.
+					</p>
+				</div>
+				<div class="zigzag-image">
+					<img src="https://placehold.co/600x400/png" alt="Innovative Designs" />
+				</div>
+			</div>
+			<div class="zigzag-item reverse">
+				<div class="zigzag-content">
+					<h2 class="zigzag-heading sh-b1">Sustainable Practices</h2>
+					<p class="section-description">
+						Our commitment to sustainability ensures that our projects are environmentally friendly
+						and future-ready.
+					</p>
+				</div>
+				<div class="zigzag-image">
+					<img src="https://placehold.co/600x400/png" alt="Sustainable Practices" />
+				</div>
+			</div>
+			<div class="zigzag-item">
+				<div class="zigzag-content">
+					<h2 class="zigzag-heading sh-b1">Customer Satisfaction</h2>
+					<p class="section-description">
+						We prioritize our customers' needs and deliver projects that exceed expectations.
+					</p>
+				</div>
+				<div class="zigzag-image">
+					<img src="https://placehold.co/600x400/png" alt="Customer Satisfaction" />
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 
 <style>
@@ -127,19 +135,19 @@
 	}
 
 	.zigzag-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 4rem;
-    }
+		display: flex;
+		align-items: center;
+		margin-bottom: 4rem;
+	}
 
-    .zigzag-item.reverse {
-        flex-direction: row-reverse;
-    }
+	.zigzag-item.reverse {
+		flex-direction: row-reverse;
+	}
 
-    .zigzag-content {
-        flex: 1;
-        padding: 1rem;
-    }
+	.zigzag-content {
+		flex: 1;
+		padding: 1rem;
+	}
 
 	.zigzag-heading {
 		font-size: 1.3rem;
@@ -147,28 +155,28 @@
 		text-align: center;
 		margin-block: 3rem 1rem;
 	}
-    .zigzag-image {
-        flex: 1;
-        padding: 1rem;
-    }
+	.zigzag-image {
+		flex: 1;
+		padding: 1rem;
+	}
 
-    .zigzag-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+	.zigzag-image img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
 	@media (max-width: 768px) {
-        .zigzag-item {
-            flex-direction: column;
-        }
+		.zigzag-item {
+			flex-direction: column;
+		}
 
-        .zigzag-item.reverse {
-            flex-direction: column;
-        }
+		.zigzag-item.reverse {
+			flex-direction: column;
+		}
 
-        .zigzag-content,
-        .zigzag-image {
-            padding: 0.5rem;
-        }
-    }
+		.zigzag-content,
+		.zigzag-image {
+			padding: 0.5rem;
+		}
+	}
 </style>

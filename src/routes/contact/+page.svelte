@@ -1,3 +1,10 @@
+<script>
+	function handleSubmit() {
+		// Add form submission logic here
+		alert('Message sent successfully!');
+	}
+</script>
+
 <svelte:head>
 	<title>CONTACT | Pushpanjali Construction - Building Excellence with Precision</title>
 </svelte:head>
@@ -15,7 +22,9 @@
 			<div class="contact-grid">
 				<div class="contact-info">
 					<h2 class="section-heading sh-b1">Get in Touch</h2>
-					<p class="section-description">Feel free to contact us through any of the following methods:</p>
+					<p class="section-description">
+						Feel free to contact us through any of the following methods:
+					</p>
 					<ul>
 						<li><strong>Phone:</strong> +1 (123) 456-7890</li>
 						<li><strong>Email:</strong> contact@pushpanjali.com</li>
@@ -44,13 +53,6 @@
 		</div>
 	</section>
 </main>
-
-<script>
-	function handleSubmit() {
-		// Add form submission logic here
-		alert('Message sent successfully!');
-	}
-</script>
 
 <style>
 	.contact-header {

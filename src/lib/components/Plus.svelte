@@ -6,22 +6,28 @@
 	<div class="container">
 		<div class="plus-wrapper">
 			<div class="plus-headings">
-					<h2 class="section-heading sh-b2">Discover the Plus Advantage</h2>
-					<img class="plus-logo" src={plusLogo} alt="Plus Logo" />
-					<p class="plus-description section-description">
-						We go beyond the ordinary to bring you exceptional services. From investment benefits to home interiors, leasing solutions to financial assistance, explore how we make life simpler and better for you.
-					</p>
+				<h2 class="section-heading sh-b2">Discover the Plus Advantage</h2>
+				<img class="plus-logo" src={plusLogo} alt="Plus Logo" />
+				<p class="plus-description section-description">
+					We go beyond the ordinary to bring you exceptional services. From investment benefits to
+					home interiors, leasing solutions to financial assistance, explore how we make life
+					simpler and better for you.
+				</p>
 			</div>
 			<div class="plus-list">
 				<div class="plus-item">
 					<img src="https://placehold.co/400x400/png" alt="Investment Benefits" />
 					<h4 class="accent">Investment Benefits</h4>
-					<p class="plus-item-description">Maximize your returns with our expert investment solutions tailored to your needs.</p>
+					<p class="plus-item-description">
+						Maximize your returns with our expert investment solutions tailored to your needs.
+					</p>
 				</div>
 				<div class="plus-item">
 					<img src="https://placehold.co/400x400/png" alt="Leasing Solution" />
 					<h4 class="accent">Leasing Solutions</h4>
-					<p class="plus-item-description">Simplify leasing with our comprehensive and hassle-free services.</p>
+					<p class="plus-item-description">
+						Simplify leasing with our comprehensive and hassle-free services.
+					</p>
 				</div>
 			</div>
 			<div class="plus-cta">
@@ -60,7 +66,9 @@
 		padding: 1.5rem; /* Reduced padding for a more compact look */
 		border-radius: 6px; /* Slightly smaller border radius */
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern feel */
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 	.plus-item:hover {
 		transform: translateY(-3px); /* Reduced hover effect */

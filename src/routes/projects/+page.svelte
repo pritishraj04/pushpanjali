@@ -105,7 +105,9 @@
 		line-height: 1.5;
 		padding-left: 50px;
 		width: 100%;
-		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+		transition:
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
 	}
 
 	.project-search-input::placeholder {

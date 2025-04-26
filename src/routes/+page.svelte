@@ -115,6 +115,4 @@
 		letter-spacing: 0.03rem;
 		text-transform: uppercase;
 	}
-
-
 </style>

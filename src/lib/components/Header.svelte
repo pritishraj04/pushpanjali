@@ -84,8 +84,8 @@
 	}
 	@media screen and (max-width: 820px) {
 		.nav-link {
-		font-size: 1rem;
-	}
+			font-size: 1rem;
+		}
 		.header-wrapper {
 			padding-block: 1rem;
 		}

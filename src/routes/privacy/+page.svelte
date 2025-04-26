@@ -1,5 +1,5 @@
 <script>
-	export let title = "Privacy Policy";
+	export let title = 'Privacy Policy';
 </script>
 
 <main>

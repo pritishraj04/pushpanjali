@@ -86,10 +86,10 @@
 					</SplideTrack>
 					<div class="splide__arrows">
 						<button class="splide__arrow splide__arrow--prev"
-							><Icon icon="bitcoin-icons:caret-right-outline" width="24" height="24" /></button
+							><Icon icon="fluent:chevron-left-48-filled" /></button
 						>
 						<button class="splide__arrow splide__arrow--next"
-							><Icon icon="bitcoin-icons:caret-right-outline" width="24" height="24" /></button
+							><Icon icon="fluent:chevron-right-48-filled" /></button
 						>
 					</div>
 				</Splide>
@@ -145,9 +145,6 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		text-align: center;
-	}
-	.splide__arrow {
-		background-color: transparent;
 	}
 
 	@media screen and (max-width: 820px) {

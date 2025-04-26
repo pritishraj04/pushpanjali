@@ -1,5 +1,5 @@
 <script>
-	export let title = "Our Team";
+	export let title = 'Our Team';
 </script>
 
 <main>

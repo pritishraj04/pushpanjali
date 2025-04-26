@@ -19,7 +19,12 @@
 	<!-- Category Filter -->
 	<div class="project-filter-item">
 		<label for="category">Category:</label>
-		<select id="category" bind:value={filters.category} onchange={filteredProjects} class="animated-select">
+		<select
+			id="category"
+			bind:value={filters.category}
+			onchange={filteredProjects}
+			class="animated-select"
+		>
 			<option value="">All Categories</option>
 			{#each categories as category}
 				<option value={category}>{category}</option>
@@ -30,7 +35,12 @@
 	<!-- Status Filter -->
 	<div class="project-filter-item">
 		<label for="status">Status:</label>
-		<select id="status" bind:value={filters.status} onchange={filteredProjects} class="animated-select">
+		<select
+			id="status"
+			bind:value={filters.status}
+			onchange={filteredProjects}
+			class="animated-select"
+		>
 			<option value="">All Statuses</option>
 			{#each statusOptions as status}
 				<option value={status}>{status.toUpperCase()}</option>
@@ -41,7 +51,12 @@
 	<!-- Location Filter -->
 	<div class="project-filter-item">
 		<label for="location">Location:</label>
-		<select id="location" bind:value={filters.location} onchange={filteredProjects} class="animated-select">
+		<select
+			id="location"
+			bind:value={filters.location}
+			onchange={filteredProjects}
+			class="animated-select"
+		>
 			<option value="">All Locations</option>
 			{#each locations as location}
 				<option value={location}>{location}</option>
@@ -52,7 +67,12 @@
 	<!-- Price Filter -->
 	<div class="project-filter-item">
 		<label for="price">Price Range:</label>
-		<select id="price" bind:value={filters.price} onchange={filteredProjects} class="animated-select">
+		<select
+			id="price"
+			bind:value={filters.price}
+			onchange={filteredProjects}
+			class="animated-select"
+		>
 			<option value="">All Prices</option>
 			{#each priceRanges as range}
 				<option value={range.label}>{range.label}</option>
@@ -103,7 +123,9 @@
 		background-repeat: no-repeat;
 		background-position: right 1rem center;
 		background-size: 1.2em;
-		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+		transition:
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
 	}
 
 	.animated-select:focus {
@@ -125,7 +147,9 @@
 		border: 1px solid #d3cce3;
 		border-radius: 8px;
 		cursor: pointer;
-		transition: background-color 0.2s ease, color 0.2s ease;
+		transition:
+			background-color 0.2s ease,
+			color 0.2s ease;
 		font-weight: bold;
 	}
 

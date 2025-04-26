@@ -37,7 +37,7 @@
 			desc2: 'RESIDENTIAL AND COMMERCIAL SPACES',
 			mapLink: 'https://maps.app.goo.gl/8yG83TWtFmRjvNot7',
 			address: 'DANAPUR, PATNA'
-		},
+		}
 	];
 </script>
 
@@ -93,8 +93,5 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		text-align: center;
-	}
-	.splide__arrow {
-		background-color: transparent;
 	}
 </style>

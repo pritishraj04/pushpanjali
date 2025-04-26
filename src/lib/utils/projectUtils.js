@@ -43,29 +43,33 @@ export const getStatus = (project) => {
 	}
 };
 
-export const getHeaderImage = (project, device = "desktop") => {
+export const getHeaderImage = (project, device = 'desktop') => {
 	const images = project.images;
-	return images?.length > 0 ? device == 'desktop' ? images[0] : images[1] : 'https://placehold.co/1200x700/png';
+	return images?.length > 0
+		? device == 'desktop'
+			? images[0]
+			: images[1]
+		: 'https://placehold.co/1200x700/png';
 };
 
 // Utility function to add scroll-based animations with different effects
 export function addScrollAnimations() {
-  const elements = document.querySelectorAll('[data-animate]');
+	const elements = document.querySelectorAll('[data-animate]');
 
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const animationType = entry.target.getAttribute('data-animate');
-          entry.target.classList.add('visible', animationType);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 } // Trigger when 10% of the element is visible
-  );
+	const observer = new IntersectionObserver(
+		(entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const animationType = entry.target.getAttribute('data-animate');
+					entry.target.classList.add('visible', animationType);
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.1 } // Trigger when 10% of the element is visible
+	);
 
-  elements.forEach((element) => {
-    observer.observe(element);
-  });
+	elements.forEach((element) => {
+		observer.observe(element);
+	});
 }

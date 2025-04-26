@@ -23,11 +23,7 @@
 			<div class="plan">
 				<h5 class="plan-name">{plan.name}</h5>
 				<button onclick={() => openModal(plan.image)}>
-					<img
-						class="plan-image"
-						src={plan.image}
-						alt={plan.name}
-					/>
+					<img class="plan-image" src={plan.image} alt={plan.name} />
 				</button>
 			</div>
 		{/each}
@@ -78,7 +74,9 @@
 		border-radius: 12px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		margin-bottom: 16px; /* Adjusted for better spacing */
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 		cursor: pointer;
 	}
 

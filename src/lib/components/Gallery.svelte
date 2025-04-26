@@ -2,6 +2,7 @@
 	let { project } = $props();
 	const gallery = project.gallery;
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+	import Icon from '@iconify/svelte';
 	const options = {
 		perPage: 3,
 		perMove: 1,
@@ -24,12 +25,22 @@
 			}
 		}
 	};
+
+	let splideInstance;
+
+	function goToNext() {
+		splideInstance.go('>');
+	}
+
+	function goToPrev() {
+		splideInstance.go('<');
+	}
 </script>
 
 <section class="gallery section-padding-bottom gallery-slider">
 	<h4 class="section-heading sh-b2">Gallery</h4>
 	<p class="section-description">Explore the elegance and sophistication of our premium spaces.</p>
-	<Splide {options} aria-label="Premium Gallery">
+	<Splide {options} aria-label="Premium Gallery" bind:this={splideInstance}>
 		{#each gallery as slide}
 			<SplideSlide>
 				<div class="carousel">
@@ -42,6 +53,14 @@
 			</SplideSlide>
 		{/each}
 	</Splide>
+	<div class="custom-navigation">
+		<button class="nav-btn prev-btn" onclick={goToPrev}
+			><Icon icon="fluent:chevron-left-48-filled" /></button
+		>
+		<button class="nav-btn next-btn" onclick={goToNext}
+			><Icon icon="fluent:chevron-right-48-filled" /></button
+		>
+	</div>
 </section>
 
 <style>
@@ -57,25 +76,23 @@
 		height: 100%;
 		object-fit: cover; /* Ensure images fit uniformly */
 	}
-	.carousel-content {
-		position: absolute;
-		bottom: 20px;
-		left: 20px;
+	.custom-navigation {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.nav-btn {
+		background-color: rgba(0, 0, 0, 0.5);
 		color: white;
-		background-color: rgba(0, 0, 0, 0.6);
-		backdrop-filter: saturate(180%) blur(10px);
-		-webkit-backdrop-filter: saturate(180%) blur(10px);
-		padding: 10px;
-		border-radius: 8px;
-		max-width: 80%;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
 	}
-	.carousel-title {
-		font-weight: 500;
-		text-transform: uppercase;
-		margin-bottom: 5px;
-	}
-	.carousel-description {
-		font-size: 14px;
-		line-height: 1.4;
+	.nav-btn:hover {
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 </style>

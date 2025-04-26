@@ -1,5 +1,5 @@
 <script>
-	export let title = "Terms & Conditions";
+	export let title = 'Terms & Conditions';
 </script>
 
 <main>

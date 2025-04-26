@@ -4,7 +4,7 @@
 
 	import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 	import '$lib/assets/css/style.css';
-	import "../app.css";
+	import '../app.css';
 </script>
 
 <Header />

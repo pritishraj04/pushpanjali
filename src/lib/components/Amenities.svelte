@@ -36,13 +36,19 @@
 		padding: 2rem 1.5rem;
 		border-radius: 8px;
 		background: linear-gradient(145deg, #ffffff, #e6e6e6);
-		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.7);
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		box-shadow:
+			4px 4px 8px rgba(0, 0, 0, 0.1),
+			-4px -4px 8px rgba(255, 255, 255, 0.7);
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 		text-align: center;
 	}
 	.amenity:hover {
 		transform: translateY(-10px);
-		box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.8);
+		box-shadow:
+			6px 6px 12px rgba(0, 0, 0, 0.2),
+			-6px -6px 12px rgba(255, 255, 255, 0.8);
 		background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
 	}
 	.amenity-title {

@@ -5,6 +5,7 @@
 	import value2 from '$lib/assets/images/value/value2.jpeg';
 	import value3 from '$lib/assets/images/value/value3.jpeg';
 	import value4 from '$lib/assets/images/value/value4.jpeg';
+	import Icon from '@iconify/svelte';
 
 	const options = {
 		perPage: 3,
@@ -93,8 +94,12 @@
 					{/each}
 				</Splide>
 				<div class="custom-navigation">
-					<button class="nav-btn prev-btn" on:click={goToPrev}>&lt;</button>
-					<button class="nav-btn next-btn" on:click={goToNext}>&gt;</button>
+					<button class="nav-btn prev-btn" onclick={goToPrev}
+						><Icon icon="fluent:chevron-left-48-filled" /></button
+					>
+					<button class="nav-btn next-btn" onclick={goToNext}
+						><Icon icon="fluent:chevron-right-48-filled" /></button
+					>
 				</div>
 				<div class="value-cta">
 					<a href="/brand" class="btn btn-secondary">Brand Story</a>
