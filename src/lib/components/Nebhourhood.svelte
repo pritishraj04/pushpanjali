@@ -9,6 +9,7 @@
 	<div class="project-nearby-places">
 		<Map {project} />
 	</div>
+	<a class="gmap-location" href={project.map_data.gmap_address} target="_blank" rel="noopener noreferrer">Click here to Open in maps</a>
 </section>
 
 <style>
@@ -25,5 +26,11 @@
 
 	.project-nearby-places {
 		margin-top: 1.5rem;
+	}
+	.gmap-location{
+		display: block;
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 1.2rem;
 	}
 </style>

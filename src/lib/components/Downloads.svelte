@@ -1,8 +1,18 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import Enquiry from './Enquiry.svelte';
 
 	let { project } = $props();
 	const downloads = project.downloads;
+	let isPopupVisible = $state(false);
+	let selectedFile = $state(null);
+	let selectedFileName = $state("");
+
+	const togglePopup = (file = null, fileName= "") => {
+		selectedFile = file;
+		selectedFileName = fileName;
+		isPopupVisible = !isPopupVisible;
+	};
 </script>
 
 <section class="downloads section-padding-bottom">
@@ -11,18 +21,24 @@
 	<ul data-role="list" class="downloads-list">
 		{#each downloads as download, index}
 			<li class="dowload-item">
-				<a href={download.file} target="_blank" rel="noopener noreferrer" class="download-link">
+				<button onclick={() => togglePopup(download.file, download.fileName)} class="download-link">
 					<div class="download-icon">
 						<Icon icon="material-symbols-light:download" width="18" height="18" />
 					</div>
 					<div class="download-details">
 						<h5 class="download-name">{download.title}</h5>
 					</div>
-				</a>
+				</button>
 			</li>
 		{/each}
 	</ul>
 </section>
+
+<!-- fix no download issue, add success page, add a field to know where the form is submitter -->
+
+{#if isPopupVisible}
+	<Enquiry {togglePopup} file={selectedFile} fileName={selectedFileName} />
+{/if}
 
 <style>
 	.downloads-list {

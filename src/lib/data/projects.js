@@ -15,6 +15,16 @@ import a9 from '$lib/assets/images/projects/ratna-tower/a9.jpeg';
 import a10 from '$lib/assets/images/projects/ratna-tower/a10.jpeg';
 import a11 from '$lib/assets/images/projects/ratna-tower/a11.jpeg';
 
+import amenityIcon1 from '$lib/assets/images/icons/b1.svg';
+import amenityIcon2 from '$lib/assets/images/icons/b2.svg';
+import amenityIcon3 from '$lib/assets/images/icons/b3.svg';
+import amenityIcon4 from '$lib/assets/images/icons/b4.svg';
+import amenityIcon5 from '$lib/assets/images/icons/b5.svg';
+import amenityIcon6 from '$lib/assets/images/icons/b6.svg';
+
+import ratnaTowerFloorPlanPdf from '$lib/assets/pdfs/ratna-tower/RatnaTowerFloorPlans.pdf';
+import ratnaTowerBrochurePdf from '$lib/assets/pdfs/ratna-tower/RatnaTowerBrochure.pdf';
+
 export const projects = [
 	{
 		id: 1,
@@ -26,8 +36,8 @@ export const projects = [
 		location: 'AKHARAGHAT ROAD',
 		map_data: {
 			gmap_embed:
-				'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28654.774077417867!2d85.3548319!3d26.136539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed1107ffce6363%3A0x17c354aaab1e46b6!2sPushpanjali%20TN%20tower!5e0!3m2!1sen!2sin!4v1743322894158!5m2!1sen!2sin',
-			gmap_address: '49X4+FM9, Jaiprakash Nagar, Bairia, Muzaffarpur, Bihar 843108',
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3581.6903730170084!2d85.38745647541312!3d26.1416366771151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDA4JzI5LjkiTiA4NcKwMjMnMjQuMSJF!5e0!3m2!1sen!2sin!4v1745759821325!5m2!1sen!2sin",
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Nearest Bus Stand',
@@ -66,21 +76,33 @@ export const projects = [
 		amenities: [
 			{
 				id: 1,
-				title: 'Swimming Pool',
-				description: '200-litre swimming pool with free access to the pool',
-				icon: 'iconamoon:lightning-1-thin'
+				title: 'Vaastu Compliant Spacious Flats ',
+				icon: amenityIcon1
 			},
 			{
 				id: 2,
-				title: 'Gymnasium',
-				description: '200-seater gymnasium with a fitness center',
-				icon: 'iconamoon:lightning-1-thin'
+				title: 'Community Swimming Pool',
+				icon: amenityIcon2
 			},
 			{
 				id: 3,
-				title: 'Air-conditioning',
-				description: 'Central air-conditioning system for comfortable living',
-				icon: 'iconamoon:lightning-1-thin'
+				title: 'Roof-Top Banquet Hall',
+				icon: amenityIcon3
+			},
+			{
+				id: 4,
+				title: 'Big Balconies',
+				icon: amenityIcon4
+			},
+			{
+				id: 5,
+				title: '24x7 Electricity Supply ',
+				icon: amenityIcon5
+			},
+			{
+				id: 6,
+				title: 'Secure Society',
+				icon: amenityIcon6
 			}
 		],
 		description:
@@ -146,12 +168,14 @@ export const projects = [
 			{
 				id: 1,
 				title: 'Floor Plan',
-				file: 'https://example.com/floor-plan.pdf'
+				fileName: 'RATNA TOWER (FLOOR PLANS)',
+				file: ratnaTowerFloorPlanPdf
 			},
 			{
 				id: 2,
 				title: 'Property Brochure',
-				file: 'https://example.com/property-brochure.pdf'
+				fileName: 'Ratna Tower (Brochure) - PUSHPANJALI GROUP',
+				file: ratnaTowerBrochurePdf
 			}
 		],
 		prices: [
@@ -163,21 +187,15 @@ export const projects = [
 			},
 			{
 				id: 2,
-				name: '3.5 BHK',
+				name: '3 BHK',
 				minimum_price: 72000000,
 				maximum_price: 113000000
 			},
 			{
 				id: 3,
-				name: '4 BHK',
+				name: 'Commercial Spaces',
 				minimum_price: 94900000,
 				maximum_price: 104900000
-			},
-			{
-				id: 4,
-				name: 'Studios',
-				minimum_price: 4900000,
-				maximum_price: 5900000
 			}
 		]
 	},

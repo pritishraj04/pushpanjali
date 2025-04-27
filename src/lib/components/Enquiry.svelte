@@ -1,7 +1,7 @@
 <script>
 	import { projects } from '$lib/data/projects';
 	import Icon from '@iconify/svelte';
-    let {togglePopup} = $props();
+    let {togglePopup, file, fileName} = $props();
 
     let name = $state("");
     let email = $state("");
@@ -45,14 +45,30 @@
     function handleSubmit(event) {
         if (!validateForm()) {
             event.preventDefault();
+            return;
         }
+
+        if (file) {
+            // Logic to download the file
+            downloadFile();
+        }
+    }
+
+    function downloadFile() {
+        // Logic to download a sample file
+        const link = document.createElement('a');
+        link.href = file; // Replace with the actual path to the sample file file
+        link.download = `${fileName}.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 </script>
 
 <div class="backdrop">
     <div class="bg-[#f6f6f6] shadow-lg w-full max-w-lg p-8 space-y-6 mx-4 md:mx-auto">
         <div class="flex justify-between items-center">
-            <h2 class="text-xl font-semibold">Get in Touch</h2>
+            <h2 class="text-xl font-semibold">{file? `Submit the form to download` : `Get in Touch`}</h2>
             <button class="text-gray-500 hover:text-gray-700 cursor-pointer" onclick={togglePopup}><Icon icon="charm:cross" height=24 width=24 /> </button>
         </div>
         <form method="POST" data-netlify="true" name="lead-form" class="space-y-3" onsubmit={handleSubmit} novalidate>
@@ -125,10 +141,17 @@
                 {/if}
             </div>
             <div class="flex justify-center mt-10">
-                <button
-                    type="submit"
-                    class="btn-premium"
-                >Submit</button>
+                {#if file}
+                    <button
+                        type="submit"
+                        class="btn-premium"
+                    >Download File</button>
+                {:else}
+                    <button
+                        type="submit"
+                        class="btn-premium"
+                    >Submit</button>
+                {/if}
             </div>
         </form>
         <p class="text-sm text-gray-500">By clicking on submit you authorize Rustomjee to get in touch with you over a call, SMS, E-mail or any other communication channel.<br><br>After submitting your request, we will get in touch with you soon.</p>

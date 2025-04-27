@@ -60,7 +60,7 @@
 </header>
 
 {#if isPopupVisible}
-	<Enquiry {togglePopup} />
+	<Enquiry {togglePopup}   />
 {/if}
 
 <style>
@@ -107,10 +107,10 @@
 		color: white;
 		padding: 0.5rem 1rem;
 		border: none;
-		border-radius: 4px;
 		cursor: pointer;
 		font-size: 0.875rem;
-		transition: background-color 0.3s ease;
+		transition: all 0.3s ease;
+cursor: pointer;
 	}
 
 	.cta-btn:hover {

@@ -14,9 +14,8 @@
 	<ul data-role="list" class="amenities-list">
 		{#each amenities as amenity}
 			<li class="amenity">
-				<Icon icon={amenity.icon} width="42" height="42" />
+				<img class="amenity-icon" src={amenity.icon} alt={amenity.title} style="width: 52px;" />
 				<h5 class="amenity-title">{amenity.title}</h5>
-				<p class="amenity-description">{amenity.description}</p>
 			</li>
 		{/each}
 	</ul>
@@ -25,7 +24,7 @@
 <style>
 	.amenities-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
 		gap: 30px;
 		list-style-type: none;
 		padding: 0;
@@ -33,12 +32,12 @@
 		padding-top: 20px;
 	}
 	.amenity {
-		padding: 2rem 1.5rem;
+		padding: 1rem 0.7rem;
 		border-radius: 8px;
-		background: linear-gradient(145deg, #ffffff, #e6e6e6);
-		box-shadow:
+		/* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
+		/* box-shadow:
 			4px 4px 8px rgba(0, 0, 0, 0.1),
-			-4px -4px 8px rgba(255, 255, 255, 0.7);
+			-4px -4px 8px rgba(255, 255, 255, 0.7); */
 		transition:
 			transform 0.3s ease,
 			box-shadow 0.3s ease;
@@ -49,7 +48,10 @@
 		box-shadow:
 			6px 6px 12px rgba(0, 0, 0, 0.2),
 			-6px -6px 12px rgba(255, 255, 255, 0.8);
-		background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
+			background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	}
+	.amenity-icon{
+		justify-self: center;
 	}
 	.amenity-title {
 		margin-block: 0.5rem;
@@ -59,20 +61,10 @@
 		letter-spacing: 0.03em;
 		color: #2a2a2a;
 	}
-	.amenity-description {
-		margin-block: 0.4rem;
-		font-size: 1rem;
-		line-height: 1.4;
-		letter-spacing: 0.03em;
-		color: #3a3a3a;
-	}
 
 	@media screen and (max-width: 820px) {
 		.amenity-title {
 			font-size: 1.2rem;
-		}
-		.amenity-description {
-			font-size: 0.9rem;
 		}
 		.section-heading {
 			font-size: 1.6rem;
