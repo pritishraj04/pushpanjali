@@ -15,6 +15,10 @@
         project: ""
     });
 
+    let showSuccessPopup = $state(false);
+    let showFailurePopup = $state(false);
+    let showSuccessMessage = $state(false);
+
     function validateForm() {
         let isValid = true;
         errors = { name: "", email: "", mobile: "", project: "" };
@@ -42,15 +46,33 @@
         return isValid;
     }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
+        event.preventDefault();
+
         if (!validateForm()) {
-            event.preventDefault();
+            showFailurePopup = true;
+            setTimeout(() => (showFailurePopup = false), 3000);
             return;
         }
 
-        if (file) {
-            // Logic to download the file
-            downloadFile();
+        const formData = new FormData(event.target);
+
+        try {
+            const response = await fetch('/', {
+                method: 'POST',
+                body: formData,
+            });
+
+            if (response.ok) {
+                showSuccessMessage = true;
+                togglePopup(); // Close the form immediately
+            } else {
+                showFailurePopup = true;
+                setTimeout(() => (showFailurePopup = false), 3000);
+            }
+        } catch (error) {
+            showFailurePopup = true;
+            setTimeout(() => (showFailurePopup = false), 3000);
         }
     }
 
@@ -154,6 +176,15 @@
                 {/if}
             </div>
         </form>
+        {#if showSuccessPopup}
+            <div class="popup success">Form submitted successfully!</div>
+        {/if}
+        {#if showFailurePopup}
+            <div class="popup failure">Failed to submit the form. Please try again.</div>
+        {/if}
+        {#if showSuccessMessage}
+            <div class="popup success">Form submitted successfully!</div>
+        {/if}
         <p class="text-sm text-gray-500">By clicking on submit you authorize Rustomjee to get in touch with you over a call, SMS, E-mail or any other communication channel.<br><br>After submitting your request, we will get in touch with you soon.</p>
     </div>
 </div>
@@ -194,5 +225,26 @@
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 100;
+    }
+
+    .popup {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        z-index: 200;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup.success {
+        background-color: #4caf50;
+    }
+
+    .popup.failure {
+        background-color: #f44336;
     }
 </style>

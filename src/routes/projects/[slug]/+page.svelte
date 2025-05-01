@@ -28,7 +28,7 @@
 		style={`background-image: 
 			url(${x > 960 ? getHeaderImage(project, 'desktop') : getHeaderImage(project, 'mobile')});`}
 	>
-		<div class="container">
+		<div class="container project-details-container">
 			<div class="project-details">
 				<h3 class="project-name">{project.name}</h3>
 				<h5 class="project-location">{project.location}, {project.city}</h5>
@@ -81,39 +81,40 @@
 		align-items: flex-end;
 		padding: 2rem;
 		color: #fff;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 	}
-
+	.project-details-container{
+		margin-bottom: -8rem;
+	}
 	.project-details {
-		background: rgba(255, 255, 255, 0.08);
-		backdrop-filter: blur(8px);
-		padding: 1.5rem;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-		max-width: 600px;
+		background-color: #ffffff;
+		padding: 1.2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+		max-width: 550px;
 	}
 
 	.project-name {
-		font-size: 1.6rem;
-		font-weight: 500;
-		margin-bottom: 0.3rem;
-		color: #f1f1f1;
-		letter-spacing: 0.2px;
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin-bottom: 0.2rem;
+		color: #333333;
+		letter-spacing: 0.1px;
 	}
 
 	.project-location {
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		font-weight: 400;
-		margin-bottom: 0.7rem;
-		color: #cccccc;
+		margin-bottom: 0.5rem;
+		color: #555555;
 	}
 
 	.project-additionals {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
-		gap: 0.8rem;
-		font-size: 0.85rem;
-		color: #dcdcdc;
+		gap: 0.25rem;
+		font-size: 0.8rem;
+		color: #666666;
 	}
 
 	.project-additionals p {
@@ -121,19 +122,19 @@
 	}
 
 	.project-price {
-		font-weight: 500;
-		color: #ffcc00;
-		font-size: 0.95rem;
+		font-weight: 600;
+		color: #444444;
+		font-size: 0.9rem;
 	}
 
 	.project-possession strong {
-		color: #1dbf73;
-		font-weight: 500;
+		color: #555555;
+		font-weight: 600;
 	}
 
 	.project-bhk {
 		font-style: italic;
-		color: #b0b0b0;
+		color: #666666;
 	}
 
 	.container {

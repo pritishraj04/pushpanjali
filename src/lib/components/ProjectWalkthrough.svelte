@@ -94,4 +94,16 @@
 		gap: 0.5rem;
 		text-align: center;
 	}
+	@media screen and (max-width: 820px) {
+		.walkthrough-details  {
+			position: relative;
+			padding: 1.5rem;
+			background-color: #eaeaea;
+			color: #777776;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			text-align: center;
+		}
+	}
 </style>

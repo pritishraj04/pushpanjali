@@ -4,7 +4,7 @@
 	import rs3 from '$lib/assets/images/projects/ratna-tower/rs3.svg';
 </script>
 
-<section class="section-padding section-alt">
+<section class="section-padding section-alt" style="padding-top: 60px;">
 	<div class="project-headings-wrapper">
 		<div class="container">
 			<div class="svgs svg1">

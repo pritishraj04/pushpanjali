@@ -32,6 +32,11 @@
 		padding-top: 20px;
 	}
 	.amenity {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 		padding: 1rem 0.7rem;
 		border-radius: 8px;
 		/* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
@@ -63,8 +68,19 @@
 	}
 
 	@media screen and (max-width: 820px) {
+		.amenities-list {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+		.amenity {
+			padding: 0.5rem 0.5rem;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+		.amenity-icon {
+			width: 40px;
+		}
 		.amenity-title {
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 		.section-heading {
 			font-size: 1.6rem;
