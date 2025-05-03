@@ -15,7 +15,6 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		target: '#svelte',
 		prerender: {
 			crawl: true,
 			enabled: true,
