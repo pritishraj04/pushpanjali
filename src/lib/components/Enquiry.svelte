@@ -93,7 +93,7 @@
             <h2 class="text-xl font-semibold">{file? `Submit the form to download` : `Get in Touch`}</h2>
             <button class="text-gray-500 hover:text-gray-700 cursor-pointer" onclick={togglePopup}><Icon icon="charm:cross" height=24 width=24 /> </button>
         </div>
-        <form method="POST" data-netlify="true" name="lead-form" class="space-y-3" onsubmit={handleSubmit} novalidate>
+        <form method="POST" data-netlify="true" name="lead-form" class="space-y-3" onsubmit={handleSubmit} data-netlify-honeypot="bot-field" novalidate>
             <input type="hidden" name="form-name" value="lead-form" />
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
