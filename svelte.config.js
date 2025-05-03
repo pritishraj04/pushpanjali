@@ -14,7 +14,14 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		target: '#svelte',
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: true,
+			pages: ['*']
+		}
 	}
 };
 
