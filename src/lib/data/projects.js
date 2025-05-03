@@ -201,8 +201,8 @@ export const projects = [
 	},
 	{
 		id: 2,
-		slug: 'pushpanjali-riverine',
-		name: 'Pushpanjali Riverine',
+		slug: 'pushpanjali-riverine-noida',
+		name: 'Pushpanjali Riverine Noida',
 		status: 'new', // new, ready, underconstruction, soldOut
 		residentialType: 'Residential',
 		city: 'Noida',
@@ -211,7 +211,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16628.972767115796!2d77.32912719590517!3d28.54936000269293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e1!3m2!1sen!2sin!4v1737881955918!5m2!1sen!2sin',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=28.5591394,77.339106',
-			gmap_address: 'H85Q+QH4, Block D, Sector 44, Noida, Uttar Pradesh 201303',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Noida Golf Course Road',
@@ -330,8 +330,8 @@ export const projects = [
 	},
 	{
 		id: 3,
-		slug: 'sunset-grove',
-		name: 'Sunset Grove',
+		slug: 'sunset-grove-bangalore',
+		name: 'Sunset Grove Bangalore',
 		status: 'ready',
 		residentialType: 'Luxury Villas',
 		city: 'Bangalore',
@@ -340,7 +340,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.401956982765!2d77.7282958!3d12.968632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b6ab3ab65f%3A0x1b387ce2f1b91d5b!2sWhitefield%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=12.968632,77.748345',
-			gmap_address: 'Whitefield, Bengaluru, Karnataka 560066',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{ title: 'ITPL', distance: '4 km', time: '15 minutes', icon: 'iconamoon:lightning-1-thin' },
 				{
@@ -391,8 +391,8 @@ export const projects = [
 	},
 	{
 		id: 4,
-		slug: 'azure-heights',
-		name: 'Azure Heights',
+		slug: 'azure-heights-mumbai',
+		name: 'Azure Heights Mumbai',
 		status: 'underconstruction',
 		residentialType: 'Apartments',
 		city: 'Mumbai',
@@ -401,7 +401,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116116.18415558094!2d72.80549971254716!3d19.1199191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c88b5e12c8eb%3A0x1b56b1f9e313cdfc!2sAndheri%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=19.1199191,72.815499',
-			gmap_address: 'Andheri West, Mumbai, Maharashtra 400058',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Juhu Beach',
@@ -458,8 +458,8 @@ export const projects = [
 	},
 	{
 		id: 5,
-		slug: 'pushpanjali-riverine',
-		name: 'Pushpanjali Riverine',
+		slug: 'pushpanjali-riverine-noida-2',
+		name: 'Pushpanjali Riverine Noida Phase 2',
 		status: 'new', // new, ready, underconstruction, soldOut
 		residentialType: 'Residential',
 		city: 'Noida',
@@ -468,7 +468,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16628.972767115796!2d77.32912719590517!3d28.54936000269293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e1!3m2!1sen!2sin!4v1737881955918!5m2!1sen!2sin',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=28.5591394,77.339106',
-			gmap_address: 'H85Q+QH4, Block D, Sector 44, Noida, Uttar Pradesh 201303',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Noida Golf Course Road',
@@ -587,8 +587,8 @@ export const projects = [
 	},
 	{
 		id: 6,
-		slug: 'green-haven',
-		name: 'Green Haven',
+		slug: 'green-haven-gurgaon',
+		name: 'Green Haven Gurgaon',
 		status: 'underconstruction',
 		residentialType: 'Luxury',
 		city: 'Gurgaon',
@@ -597,7 +597,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16628.972767115796!2d77.32912719590517!3d28.54936000269293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e1!3m2!1sen!2sin!4v1737881955918!5m2!1sen!2sin',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=28.5591394,77.339106',
-			gmap_address: 'Sector 55, Gurgaon, Haryana',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Cyber City',
@@ -671,8 +671,8 @@ export const projects = [
 	},
 	{
 		id: 7,
-		slug: 'sunset-grove',
-		name: 'Sunset Grove',
+		slug: 'sunset-grove-bangalore-2',
+		name: 'Sunset Grove Bangalore Phase 2',
 		status: 'ready',
 		residentialType: 'Luxury Villas',
 		city: 'Bangalore',
@@ -681,7 +681,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.401956982765!2d77.7282958!3d12.968632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b6ab3ab65f%3A0x1b387ce2f1b91d5b!2sWhitefield%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=12.968632,77.748345',
-			gmap_address: 'Whitefield, Bengaluru, Karnataka 560066',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{ title: 'ITPL', distance: '4 km', time: '15 minutes', icon: 'iconamoon:lightning-1-thin' },
 				{
@@ -732,8 +732,8 @@ export const projects = [
 	},
 	{
 		id: 8,
-		slug: 'azure-heights',
-		name: 'Azure Heights',
+		slug: 'azure-heights-mumbai-2',
+		name: 'Azure Heights Mumbai Phase 2',
 		status: 'underconstruction',
 		residentialType: 'Apartments',
 		city: 'Mumbai',
@@ -742,7 +742,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116116.18415558094!2d72.80549971254716!3d19.1199191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c88b5e12c8eb%3A0x1b56b1f9e313cdfc!2sAndheri%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=19.1199191,72.815499',
-			gmap_address: 'Andheri West, Mumbai, Maharashtra 400058',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Juhu Beach',
@@ -799,8 +799,8 @@ export const projects = [
 	},
 	{
 		id: 9,
-		slug: 'pushpanjali-riverine',
-		name: 'Pushpanjali Riverine',
+		slug: 'pushpanjali-riverine-noida-3',
+		name: 'Pushpanjali Riverine Noida Phase 3',
 		status: 'new', // new, ready, underconstruction, soldOut
 		residentialType: 'Residential',
 		city: 'Noida',
@@ -809,7 +809,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16628.972767115796!2d77.32912719590517!3d28.54936000269293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e1!3m2!1sen!2sin!4v1737881955918!5m2!1sen!2sin',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=28.5591394,77.339106',
-			gmap_address: 'H85Q+QH4, Block D, Sector 44, Noida, Uttar Pradesh 201303',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Noida Golf Course Road',
@@ -928,8 +928,8 @@ export const projects = [
 	},
 	{
 		id: 10,
-		slug: 'green-haven',
-		name: 'Green Haven',
+		slug: 'green-haven-gurgaon-2',
+		name: 'Green Haven Gurgaon Phase 2',
 		status: 'underconstruction',
 		residentialType: 'Luxury',
 		city: 'Gurgaon',
@@ -938,7 +938,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16628.972767115796!2d77.32912719590517!3d28.54936000269293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44e80a9461b%3A0x302ec8d3d5cb8d1a!2sAmity%20University%20Noida!5e1!3m2!1sen!2sin!4v1737881955918!5m2!1sen!2sin',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=28.5591394,77.339106',
-			gmap_address: 'Sector 55, Gurgaon, Haryana',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Cyber City',
@@ -1012,8 +1012,8 @@ export const projects = [
 	},
 	{
 		id: 11,
-		slug: 'sunset-grove',
-		name: 'Sunset Grove',
+		slug: 'sunset-grove-bangalore-3',
+		name: 'Sunset Grove Bangalore Phase 3',
 		status: 'ready',
 		residentialType: 'Luxury Villas',
 		city: 'Bangalore',
@@ -1022,7 +1022,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.401956982765!2d77.7282958!3d12.968632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b6ab3ab65f%3A0x1b387ce2f1b91d5b!2sWhitefield%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=12.968632,77.748345',
-			gmap_address: 'Whitefield, Bengaluru, Karnataka 560066',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{ title: 'ITPL', distance: '4 km', time: '15 minutes', icon: 'iconamoon:lightning-1-thin' },
 				{
@@ -1073,8 +1073,8 @@ export const projects = [
 	},
 	{
 		id: 12,
-		slug: 'azure-heights',
-		name: 'Azure Heights',
+		slug: 'azure-heights-mumbai-3',
+		name: 'Azure Heights Mumbai Phase 3',
 		status: 'underconstruction',
 		residentialType: 'Apartments',
 		city: 'Mumbai',
@@ -1083,7 +1083,7 @@ export const projects = [
 			gmap_embed:
 				'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116116.18415558094!2d72.80549971254716!3d19.1199191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c88b5e12c8eb%3A0x1b56b1f9e313cdfc!2sAndheri%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1737881955918',
 			gmap_direction: 'https://www.google.com/maps/dir/?api=1&destination=19.1199191,72.815499',
-			gmap_address: 'Andheri West, Mumbai, Maharashtra 400058',
+			gmap_address: 'https://maps.app.goo.gl/Pajsgfaf4anWjA6y8?g_st=ic',
 			time_to_reach: [
 				{
 					title: 'Juhu Beach',
