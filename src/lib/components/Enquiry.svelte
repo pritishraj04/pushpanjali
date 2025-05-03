@@ -65,13 +65,10 @@
 			name="lead-form"
 			class="space-y-3"
 			method="POST"
-			netlify
-			netlify-honeypot="bot-field"
-			action="/success"
+            action="/success"
 			onsubmit={handleSubmit}
 			novalidate
 		>
-			<input type="hidden" name="form-name" value="lead-form" />
 			<div>
 				<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
 				<input
