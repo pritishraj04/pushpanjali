@@ -131,7 +131,7 @@
 				>
 					<option value="">Select a project</option>
 					{#each projects as project}
-						<option value={project.slug}>{project.name}</option>
+						<option value={project.name}>{project.name}</option>
 					{/each}
 				</select>
 				{#if errors.project}
@@ -153,7 +153,7 @@
 			<div class="popup failure">Failed to submit the form. Please try again.</div>
 		{/if}
 		<p class="text-sm text-gray-500">
-			By clicking on submit you authorize Rustomjee to get in touch with you over a call, SMS,
+			By clicking on {file ? `download file` : `submit`} you authorize Pushpanjali to get in touch with you over a call, SMS,
 			E-mail or any other communication channel.<br /><br />After submitting your request, we will
 			get in touch with you soon.
 		</p>
