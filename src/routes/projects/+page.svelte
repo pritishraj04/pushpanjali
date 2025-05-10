@@ -2,7 +2,8 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ProjectFilter from '$lib/components/ProjectFilter.svelte';
 
-	import header from '$lib/assets/images/projects/header.jpeg';
+	import header from '$lib/assets/images/projects/header.jpg';
+	import Icon from '@iconify/svelte';
 
 	const { data } = $props();
 	const projects = data.projects;
@@ -53,6 +54,11 @@
 	function getPriceRange(label) {
 		return priceRanges.find((r) => r.label === label);
 	}
+
+	let showFilters = $state(false);
+	const toggleFilters = () => {
+		showFilters = !showFilters;
+	};
 </script>
 
 <svelte:head>
@@ -75,10 +81,17 @@
 				class="project-search-input"
 				placeholder="Search projects"
 				aria-label="Search projects by name"
-			/>
+			 />
+			<button class="btn btn-primary filter-toggle-btn" onclick={toggleFilters}>
+				<Icon icon="uiw:filter" width="24" height="24" />
+			</button>
 		</div>
 
-		<ProjectFilter bind:filters {projects} {filteredProjects} {resetFilters} />
+		<div class="filter-container {showFilters ? 'open' : ''}">
+			{#if showFilters}
+				<ProjectFilter bind:filters {projects} {filteredProjects} {resetFilters} />
+			{/if}
+		</div>
 
 		<div class="project-list">
 			{#each filteredProjects() as project, index}
@@ -89,6 +102,13 @@
 </main>
 
 <style>
+	.project-search{
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		align-items: center;
+		margin-bottom: 14px;
+	}
 	.project-search-input {
 		--svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20px' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10.783 18.828a8.05 8.05 0 0 0 7.439-4.955a8.03 8.03 0 0 0-1.737-8.765a8.045 8.045 0 0 0-13.735 5.68c0 2.131.846 4.174 2.352 5.681a8.05 8.05 0 0 0 5.68 2.359m5.706-2.337l4.762 4.759'/%3E%3C/svg%3E");
 		background-color: #fff;
@@ -96,10 +116,8 @@
 		background-position: center left 16px;
 		background-repeat: no-repeat;
 		border: 1px solid #d3cce3;
-		border-radius: 8px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		color: #5e4b7b;
-		margin-bottom: 14px;
 		font-size: 1rem;
 		height: 50px;
 		line-height: 1.5;
@@ -131,5 +149,21 @@
 		.project-list {
 			grid-template-columns: 1fr;
 		}
+	}
+
+	.filter-container {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+		opacity: 0;
+	}
+
+	.filter-container.open {
+		max-height: 700px; /* Adjust based on the content height */
+		opacity: 1;
+	}
+
+	.filter-toggle-btn {
+		padding: 12px 25px;
 	}
 </style>

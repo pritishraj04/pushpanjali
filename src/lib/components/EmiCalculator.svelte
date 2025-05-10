@@ -17,11 +17,20 @@
 	}
 
 	function updateSliderLabelPosition(input, label) {
-		const value = input.value;
-		const min = input.min || 0;
-		const max = input.max || 100;
-		const percent = ((value - min) / (max - min)) * 100;
-		label.style.left = `calc(${percent}% - 8px)`; // Adjust for label width
+		const percent = calculatePercentage(input.value, input.min || 0, input.max || 100);
+		updateLabelPosition(label, percent);
+		updateSliderColor(input, percent);
+	}
+
+	function calculatePercentage(value, min, max) {
+		return ((value - min) / (max - min)) * 100;
+	}
+
+	function updateLabelPosition(label, percent) {
+		label.style.left = `${percent}%`; // Adjust for label width
+	}
+
+	function updateSliderColor(input, percent) {
 		input.style.setProperty('--value', `${percent}%`); // Update slider color
 	}
 </script>
@@ -46,9 +55,9 @@
 				max="50"
 				step="1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
-				style="--value: 40%;"
+				style={`--value: ${calculatePercentage(advancePaymentPercent, 0, 50)}%;`}
 			/>
-			<div class="slider-label">{advancePaymentPercent}%</div>
+			<div class="slider-label" style={`left: ${calculatePercentage(advancePaymentPercent, 0, 50)}%;`}>{advancePaymentPercent}%</div>
 		</div>
 	</div>
 
@@ -66,9 +75,9 @@
 				max="30"
 				step="1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
-				style="--value: 40%;"
+				style={`--value: ${calculatePercentage(durationYears, 1, 30)}%;`}
 			/>
-			<div class="slider-label">{durationYears} Years</div>
+			<div class="slider-label" style={`left: ${calculatePercentage(durationYears, 1, 30)}%;`}>{durationYears} Years</div>
 		</div>
 	</div>
 
@@ -86,9 +95,9 @@
 				max="20"
 				step="0.1"
 				oninput={(e) => updateSliderLabelPosition(e.target, e.target.nextElementSibling)}
-				style="--value: 40%;"
+				style={`--value: ${calculatePercentage(interestRate, 1, 20)}%;`}
 			/>
-			<div class="slider-label">{interestRate}%</div>
+			<div class="slider-label" style={`left: ${calculatePercentage(interestRate, 1, 20)}%;`}>{interestRate}%</div>
 		</div>
 	</div>
 
@@ -101,11 +110,9 @@
 <style>
 	.calculator {
 		padding: 20px;
-		border: 1px solid #f5f5f5; /* Subtle border for a cleaner look */
-		border-bottom-right-radius: 10px;
-		border-bottom-left-radius: 10px;
-		background: linear-gradient(145deg, #f5f5f5, #ffffff);
+		border: 1px solid #f2e8cd; /* Subtle border for a cleaner look */
 		color: #333;
+		background-color: #fffefa;
 	}
 
 	.section {
@@ -139,10 +146,10 @@
 		height: 6px;
 		background: linear-gradient(
 			to right,
-			#e0e0e0 0%,
-			#e0e0e0 var(--value),
-			#f7f7f7 var(--value),
-			#f7f7f7 100%
+			#e4a42d 0%,
+			#da9d2b var(--value),
+			#e6e6e6 var(--value),
+			#e7e7e7 100%
 		);
 		border-radius: 3px;
 		outline: none;
@@ -153,7 +160,7 @@
 		appearance: none;
 		width: 40px;
 		height: 20px;
-		background: #f0f0f0;
+		background: #b58324;
 		border-radius: 10px;
 		cursor: pointer;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -168,16 +175,15 @@
 	.slider-label {
 		position: absolute;
 		top: -25px;
-		left: 50%;
 		transform: translateX(-50%);
-		background: #f0f0f0;
-		color: #555;
+		background: #ffffff;
+		color: #353535;
 		padding: 4px 8px;
 		border-radius: 8px;
 		font-size: 0.75em;
 		font-weight: bold;
 		white-space: nowrap;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.135);
 		transition:
 			left 0.1s ease,
 			transform 0.1s ease;

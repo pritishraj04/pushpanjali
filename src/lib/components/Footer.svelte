@@ -4,9 +4,9 @@
 
 <section class="cta-section">
 	<div class="cta-container">
-		<h2 class="cta-heading">Ready to find your dream home?</h2>
-		<p class="cta-description">Contact us today and let us help you make your dream a reality.</p>
-		<a href="/contact" class="cta-button">Get in Touch</a>
+		<h2 class="section-heading sh-b1">Ready to find your dream home?</h2>
+		<p class="section-description">Contact us today and let us help you make your dream a reality.</p>
+		<a href="/contact" class="btn btn-primary cta-button">Get in Touch</a>
 	</div>
 </section>
 
@@ -86,46 +86,26 @@
 		max-width: 800px;
 		margin: 0 auto;
 	}
-	.cta-heading {
-		font-size: 2rem;
-		color: #323232;
-		margin-bottom: 1rem;
-		font-weight: 600;
-	}
-	.cta-description {
-		font-size: 1rem;
-		color: #5a5a5a;
-		margin-bottom: 2rem;
-		line-height: 1.6;
+	.section-description {
+		margin-bottom: 3rem;
 	}
 	.cta-button {
-		display: inline-block;
 		padding: 0.8rem 2rem;
-		background-color: #323232;
-		color: #fff;
-		text-decoration: none;
-		border-radius: 4px;
-		font-size: 1rem;
-		transition: background-color 0.3s ease;
-	}
-	.cta-button:hover {
-		background-color: #505050;
 	}
 	.footer-wrapper {
 		background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
 		color: #f8f8f8;
-		padding: 4rem 1rem;
+		padding-block: 4rem;
 	}
 	.footer-top {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 4rem;
 		justify-content: space-between;
 		margin-bottom: 2rem;
 	}
 	.logo {
-		flex: 1 1 300px;
-		margin-bottom: 2rem;
-		margin-right: 2rem;
+		flex: 1 1 150px;
 	}
 	.company-logo {
 		max-width: 180px;
@@ -139,11 +119,11 @@
 	.footer-links {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2rem;
-		flex: 2 1 600px;
+		gap: 1rem;
+		flex: 2 1 300px;
 	}
 	.footer-column {
-		flex: 1 1 200px;
+		flex: 1 1 150px;
 	}
 	.footer-header {
 		font-size: 1rem;

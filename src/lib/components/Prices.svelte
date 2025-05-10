@@ -49,13 +49,11 @@
 	}
 
 	.price-aside-heading {
-		background-color: #c8a415; /* Richer gold-like color */
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
+		background-color: #b58324; /* Richer gold-like color */
 		color: #fff;
 		font-size: 1.4em; /* Reduced font size for better balance */
 		font-weight: 600; /* Slightly lighter for a cleaner look */
-		padding: 15px;
+		padding: 0.5rem 1rem;
 		text-transform: uppercase;
 		margin: 0;
 		text-align: left;
@@ -89,12 +87,9 @@
 	.price-note {
 		text-align: center;
 		font-size: 0.9em; /* Reduced font size for better readability */
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
 		font-style: italic;
 		color: #666; /* Slightly darker for better visibility */
 		padding: 12px 18px;
-		background: linear-gradient(145deg, #f5f5f5, #ffffff);
 	}
 
 	.emi-aside {

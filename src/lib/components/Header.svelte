@@ -53,7 +53,7 @@
 						</li>
 					</ul>
 				</nav>
-				<button class="cta-btn" onclick={togglePopup}>Get in Touch</button>
+				<button class="btn btn-primary cta-btn" onclick={togglePopup}>Get in Touch</button>
 			</div>
 		</div>
 	</div>
@@ -94,7 +94,7 @@
 	}
 	.nav-link {
 		text-transform: uppercase;
-		font-size: 1.125rem;
+		font-size: 0.9rem;
 	}
 	.nav-plus-cta {
 		display: flex;
@@ -103,23 +103,13 @@
 	}
 
 	.cta-btn {
-		background-color: #ddbc19;
-		color: white;
+		font-size: 0.9rem;
 		padding: 0.5rem 1rem;
-		border: none;
-		cursor: pointer;
-		font-size: 0.875rem;
-		transition: all 0.3s ease;
-cursor: pointer;
-	}
-
-	.cta-btn:hover {
-		background-color: #caa817;
 	}
 
 	@media screen and (max-width: 820px) {
 		.nav-link {
-			font-size: 1rem;
+			font-size: .7rem;
 		}
 		.header-wrapper {
 			padding-top: 1rem;

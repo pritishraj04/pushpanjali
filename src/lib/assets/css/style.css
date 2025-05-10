@@ -159,7 +159,7 @@ svg {
 }
 
 .container {
-	--width: 1440px;
+	--width: 1280px;
 	--padding: 2.5rem;
 	width: min(var(--width), 100% - var(--padding));
 	margin-inline: auto;
@@ -264,7 +264,8 @@ svg {
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 0.9rem;
+	font-weight: bold;
 	transition:
 		background-color 0.3s ease,
 		transform 0.2s ease;
@@ -275,23 +276,23 @@ svg {
 }
 
 .btn-primary {
-	background-color: #ddbc19;
+	background-color: #cb952b;
 	color: #fff;
 }
 
 .btn-primary:hover {
-	background-color: #caa817;
+	background-color: #b58324;
 }
 
 .btn-secondary {
 	position: relative;
 	background-color: transparent;
-	color: #000;
-	border: 3px double #ddbc19;
+	color: #4a4a4a;
+	border: 3px double #cb952b;
 }
 
 .btn-secondary:hover {
-	background-color: #ddbc19;
+	background-color: #b58324;
 	color: #fff;
 }
 
@@ -382,13 +383,13 @@ svg {
 }
 
 .flat-page.is-active {
-	background-color: #ffcc00;
+	background-color: #b58324;
 	transform: scale(1);
 }
 
 .splide__arrow {
 	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-	border: 2px solid #ffcc00; /* Gold border */
+	border: 2px solid #cb952b; /* Gold border */
 	color: #fff;
 	font-size: 2rem;
 	cursor: pointer;
@@ -402,7 +403,7 @@ svg {
 }
 
 .splide__arrow:hover {
-	background-color: #ffcc00; /* Gold background on hover */
+	background-color: #b58324; /* Gold background on hover */
 	color: #000; /* Black icon color on hover */
 }
 
@@ -427,7 +428,6 @@ svg {
 	backdrop-filter: saturate(180%) blur(10px);
 	-webkit-backdrop-filter: saturate(180%) blur(10px);
 	padding: 5px 10px;
-	border-radius: 8px;
 	max-width: 80%;
 }
 .splide__slide.is-active .carousel-content {

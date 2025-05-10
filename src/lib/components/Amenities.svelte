@@ -38,7 +38,7 @@
 		align-items: center;
 		gap: 1rem;
 		padding: 1rem 0.7rem;
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		/* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
 		/* box-shadow:
 			4px 4px 8px rgba(0, 0, 0, 0.1),
@@ -49,11 +49,11 @@
 		text-align: center;
 	}
 	.amenity:hover {
-		transform: translateY(-10px);
+		transform: translateY(-5px);
 		box-shadow:
-			6px 6px 12px rgba(0, 0, 0, 0.2),
-			-6px -6px 12px rgba(255, 255, 255, 0.8);
-			background: linear-gradient(145deg, #ffffff, #e6e6e6);
+			0px 4px 12px rgba(0, 0, 0, 0.2),
+			-0px -4px 12px rgba(255, 255, 255, 0.2);
+			/* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
 	}
 	.amenity-icon{
 		justify-self: center;

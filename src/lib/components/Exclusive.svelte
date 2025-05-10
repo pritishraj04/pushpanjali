@@ -118,19 +118,7 @@
 		text-align: center;
 	}
 	.btn-primary {
-		background-color: #ffd700;
-		color: #1e1e2f;
 		padding: 0.8rem 2rem;
-		border-radius: 4px;
-		text-decoration: none;
-		font-weight: 600;
-		transition:
-			background-color 0.3s ease,
-			transform 0.3s ease;
-	}
-	.btn-primary:hover {
-		background-color: #e6c200;
-		transform: translateY(-5px);
 	}
 	@media screen and (max-width: 820px) {
 		.features {

@@ -82,7 +82,7 @@
 
 	<!-- Reset Button -->
 	<div class="project-filter-item reset-container">
-		<button class="reset-btn" onclick={resetFilters} aria-label="Reset all filters">
+		<button class="btn btn-primary reset-btn" onclick={resetFilters} aria-label="Reset all filters">
 			Reset Filters
 		</button>
 	</div>
@@ -94,9 +94,8 @@
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		gap: 1.5rem;
 		padding: 2rem;
-		background: #f5f3f7;
-		border-radius: 16px;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		background: #fffefa;
+		box-shadow: 0 4px 12px rgba(48, 48, 48, 0.048);
 		margin-bottom: 2rem;
 	}
 
@@ -108,18 +107,17 @@
 
 	label {
 		font-weight: bold;
-		color: #5e4b7b;
+		color: #434343; /* Changed from #5e4b7b to dark blue */
 	}
 
 	.animated-select {
 		padding: 0.75rem;
 		border: 1px solid #d3cce3;
-		border-radius: 8px;
 		background: white;
 		font-size: 1rem;
 		width: 100%;
 		appearance: none;
-		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235e4b7b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23003366' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); /* Changed stroke color to dark blue */
 		background-repeat: no-repeat;
 		background-position: right 1rem center;
 		background-size: 1.2em;
@@ -129,8 +127,8 @@
 	}
 
 	.animated-select:focus {
-		border-color: #8a6bbd;
-		box-shadow: 0 0 5px rgba(138, 107, 189, 0.3);
+		border-color: #00509e; /* Changed from #8a6bbd to dark blue */
+		box-shadow: 0 0 5px rgba(0, 80, 158, 0.3); /* Adjusted shadow color */
 		outline: none;
 	}
 
@@ -142,21 +140,8 @@
 
 	.reset-btn {
 		padding: 0.75rem 1.5rem;
-		background: #eae6f0;
-		color: #5e4b7b;
-		border: 1px solid #d3cce3;
-		border-radius: 8px;
-		cursor: pointer;
-		transition:
-			background-color 0.2s ease,
-			color 0.2s ease;
-		font-weight: bold;
 	}
 
-	.reset-btn:hover {
-		background: #d3cce3;
-		color: #4a3a5e;
-	}
 
 	@media (max-width: 768px) {
 		.project-filter-bar {

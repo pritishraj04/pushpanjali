@@ -51,7 +51,7 @@
 				</div>
 			</div>
 		</div>
-		<Ucta />
+		<Ucta {project} />
 	</div>
 	<ProjectHeadings />
 	<div class="container">
@@ -64,7 +64,7 @@
 	<div class="container-fluid">
 		<Gallery {project} />
 	</div>
-	<div class="container">
+	<div class="container" id="downloads">
 		<Downloads {project} />
 	</div>
 	<Rera />
@@ -88,7 +88,6 @@
 	.project-details {
 		background-color: #ffffff;
 		padding: 1.2rem;
-		border-radius: 8px;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 		max-width: 550px;
 	}

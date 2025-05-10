@@ -18,19 +18,19 @@
 		<div class="project-overlay" class:active={toggleOverlay[index]}>
 			<h5 class="project-overlay-heading">Connect with us to enquire about this property</h5>
 			<div class="project-overlay-ctas">
-				<button class="btn btn-skeleton overlay-cta">
+				<button class="btn btn-primary overlay-cta">
 					<Icon icon="ic:baseline-whatsapp" width="16" height="16" />
 					<p class="project-cta-text">Enquire Now</p></button
 				>
-				<button class="btn btn-skeleton overlay-cta">
+				<button class="btn btn-primary overlay-cta">
 					<Icon icon="ic:baseline-whatsapp" width="16" height="16" />
 					<p class="project-cta-text">Schedule a Visit</p></button
 				>
-				<button class="btn btn-skeleton overlay-cta">
+				<button class="btn btn-primary overlay-cta">
 					<Icon icon="ic:baseline-whatsapp" width="16" height="16" />
 					<p class="project-cta-text">Call us</p></button
 				>
-				<button class="btn btn-skeleton overlay-cta">
+				<button class="btn btn-primary overlay-cta">
 					<Icon icon="ic:baseline-whatsapp" width="16" height="16" />
 					<p class="project-cta-text">Whatsapp</p></button
 				>

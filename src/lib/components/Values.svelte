@@ -130,7 +130,7 @@
 
 	.slide-image {
 		width: 100%;
-		border-radius: 10px;
+		/* border-radius: 10px; */
 	}
 
 	.custom-navigation {

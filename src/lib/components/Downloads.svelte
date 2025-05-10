@@ -23,7 +23,7 @@
 			<li class="dowload-item">
 				<button onclick={() => togglePopup(download.file, download.fileName)} class="download-link">
 					<div class="download-icon">
-						<Icon icon="material-symbols-light:download" width="18" height="18" />
+						<Icon icon="line-md:downloading-loop" width="24" height="24" />
 					</div>
 					<div class="download-details">
 						<h5 class="download-name">{download.title}</h5>
