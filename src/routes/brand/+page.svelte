@@ -1,5 +1,9 @@
 <script>
 	import headerImage from '$lib/assets/images/company/header.jpeg';
+	import Icon from '@iconify/svelte';
+	import zig1 from '$lib/assets/images/zig-images/zig1.jpeg';
+	import zig2 from '$lib/assets/images/zig-images/zig2.jpeg';
+	import zig3 from '$lib/assets/images/zig-images/zig3.jpeg';
 </script>
 
 <svelte:head>
@@ -17,102 +21,77 @@
 		<div class="container">
 			<h2 class="section-heading sh-b1">About Us</h2>
 			<p class="section-description">
-				Pushpanjali Construction has been a pioneer in delivering excellence in construction for
-				over two decades. Our commitment to precision and quality has made us a trusted name in the
-				industry.
+				Pushpanjali Construction has been a pioneer in delivering excellence in construction for over two decades. Our commitment to precision and quality has made us a trusted name in the industry.
 			</p>
 			<p class="section-description">
-				We specialize in creating spaces that are not only functional but also aesthetically
-				pleasing. Our team of experts works tirelessly to ensure that every project is a
-				masterpiece, reflecting our dedication to craftsmanship and innovation.
+				We specialize in creating spaces that are not only functional but also aesthetically pleasing. Our team of experts works tirelessly to ensure that every project is a masterpiece, reflecting our dedication to craftsmanship and innovation.
 			</p>
 			<p class="section-description">
-				From residential complexes to commercial buildings, we have consistently delivered projects
-				that exceed expectations. Our legacy is built on trust, transparency, and a relentless
-				pursuit of excellence.
+				From residential complexes to commercial buildings, we have consistently delivered projects that exceed expectations. Our legacy is built on trust, transparency, and a relentless pursuit of excellence.
 			</p>
 		</div>
 	</section>
 
-	<section class="brand-mission section-padding-bottom">
+	<section class="brand-mission section-padding section-alt">
 		<div class="container">
 			<h2 class="section-heading sh-b1">Our Mission</h2>
 			<p class="section-description">
-				To build spaces that inspire and empower communities, while maintaining the highest
-				standards of quality and sustainability.
+				To build spaces that inspire and empower communities, while maintaining the highest standards of quality and sustainability.
 			</p>
 			<p class="section-description">
-				We aim to redefine the construction industry by integrating cutting-edge technology and
-				sustainable practices into our projects. Our mission is to create environments that foster
-				growth, innovation, and well-being for all stakeholders.
+				We aim to redefine the construction industry by integrating cutting-edge technology and sustainable practices into our projects. Our mission is to create environments that foster growth, innovation, and well-being for all stakeholders.
 			</p>
 			<p class="section-description">
-				Every project we undertake is a step towards achieving our mission of making the world a
-				better place, one building at a time.
+				Every project we undertake is a step towards achieving our mission of making the world a better place, one building at a time.
 			</p>
 		</div>
 	</section>
 
-	<section class="brand-vision section-padding-bottom">
+	<section class="brand-vision section-padding">
 		<div class="container">
 			<h2 class="section-heading sh-b1">Our Vision</h2>
 			<p class="section-description">
 				To be a global leader in construction, known for innovation, integrity, and excellence.
 			</p>
 			<p class="section-description">
-				Our vision is to set new benchmarks in the construction industry by consistently delivering
-				projects that combine innovation with functionality. We aspire to be the go-to choice for
-				clients seeking reliable and forward-thinking construction solutions.
+				Our vision is to set new benchmarks in the construction industry by consistently delivering projects that combine innovation with functionality. We aspire to be the go-to choice for clients seeking reliable and forward-thinking construction solutions.
 			</p>
 			<p class="section-description">
-				By staying true to our core values and embracing change, we aim to shape the future of
-				construction and leave a lasting impact on the communities we serve.
+				By staying true to our core values and embracing change, we aim to shape the future of construction and leave a lasting impact on the communities we serve.
 			</p>
 		</div>
 	</section>
 
-	<section class="brand-values section-padding-bottom">
+	<section class="brand-values section-padding section-alt">
 		<div class="container">
 			<h2 class="section-heading sh-b1">Our Values</h2>
 			<ul class="section-list">
 				<li>
-					<img src="https://placehold.co/48x48" alt="Integrity Placeholder" class="value-icon" />
-					<span>Integrity</span>
-					<p>
-						We uphold the highest ethical standards in all our dealings, ensuring trust and
-						transparency with our clients and partners.
+					<div class="icon-circle"><Icon icon="hugeicons:document-validation" width="40" height="40" /></div>
+					<h3 class="values-heading">Integrity</h3>
+					<p class="values-paragraph">
+						We uphold the highest ethical standards in all our dealings, ensuring trust and transparency with our clients and partners.
 					</p>
 				</li>
 				<li>
-					<img src="https://placehold.co/48x48" alt="Innovation Placeholder" class="value-icon" />
-					<span>Innovation</span>
-					<p>
-						Our commitment to innovation drives us to explore new ideas and technologies, enabling
-						us to deliver cutting-edge solutions.
+					<div class="icon-circle"><Icon icon="hugeicons:ai-idea" width="40" height="40" /></div>
+					<h3 class="values-heading">Innovation</h3>
+					<p class="values-paragraph">
+						Our commitment to innovation drives us to explore new ideas and technologies, enabling us to deliver cutting-edge solutions.
 					</p>
 				</li>
 				<li>
-					<img
-						src="https://placehold.co/48x48"
-						alt="Customer-Centricity Placeholder"
-						class="value-icon"
-					/>
-					<span>Customer-Centricity</span>
-					<p>
-						We place our customers at the heart of everything we do, ensuring their needs and
-						expectations are always met.
+					<div class="icon-circle"><Icon icon="ix:customer-filled" width="40" height="40" /></div>
+					<h3 class="values-heading">Customer-Centricity</h3>
+					<p class="values-paragraph">
+						We place our customers at the heart of everything we do, ensuring their needs and expectations are always met.
 					</p>
 				</li>
 				<li>
-					<img
-						src="https://placehold.co/48x48"
-						alt="Sustainability Placeholder"
-						class="value-icon"
-					/>
-					<span>Sustainability</span>
-					<p>
-						We are committed to sustainable practices that minimize environmental impact and promote
-						long-term well-being.
+					<div class="icon-circle"><Icon icon="akar-icons:leaf" width="40" height="40" /></div>
+					<h3 class="values-heading">Sustainability</h3>
+					<p class="values-paragraph">
+						We are committed to sustainable practices that minimize environmental impact and promote long-term well-being.
 					</p>
 				</li>
 			</ul>
@@ -122,54 +101,65 @@
 	<section class="brand-history section-padding">
 		<div class="container">
 			<h2 class="section-heading sh-b1">Our History</h2>
-			<p class="section-description">
-				Founded in 2000, Pushpanjali Construction started as a small family business. Over the
-				years, we have grown into a leading construction company, completing numerous landmark
-				projects.
-			</p>
-			<p class="section-description">
-				Our journey has been marked by milestones that reflect our growth and evolution. From our
-				first residential project to large-scale commercial developments, we have consistently
-				pushed the boundaries of what is possible.
-			</p>
-			<p class="section-description">
-				Today, we stand as a testament to hard work, perseverance, and a vision that continues to
-				inspire us to reach greater heights.
+			<div class="history-timeline">
+				<div class="timeline-item">
+					<div class="timeline-dot"></div>
+					<div class="timeline-content">
+						<span class="timeline-year">2000</span>
+						<p class="section-description">Founded as a small family business.</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-dot"></div>
+					<div class="timeline-content">
+						<span class="timeline-year">2005</span>
+						<p class="section-description">First major residential project completed.</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-dot"></div>
+					<div class="timeline-content">
+						<span class="timeline-year">2015</span>
+						<p class="section-description">Expanded into commercial developments.</p>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-dot"></div>
+					<div class="timeline-content">
+						<span class="timeline-year">2020+</span>
+						<p class="section-description">Recognized as a leading construction company with landmark projects.</p>
+					</div>
+				</div>
+			</div>
+			<p class="section-description history-summary">
+				Today, we stand as a testament to hard work, perseverance, and a vision that continues to inspire us to reach greater heights.
 			</p>
 		</div>
 	</section>
 
-	<section class="brand-why-choose-us section-padding">
+	<section class="brand-why-choose-us section-padding section-alt">
 		<div class="container">
 			<h2 class="section-heading sh-b1">Why Choose Us</h2>
 			<ul class="section-list">
 				<li>
-					<img src="https://placehold.co/48x48" alt="Expertise Placeholder" class="value-icon" />
-					<span>Expertise</span>
-					<p>Over 20 years of experience in delivering top-notch construction projects.</p>
+					<div class="icon-circle"><Icon icon="fluent:building-home-32-filled" width="40" height="40" /></div>
+					<h3 class="choose-heading">Expertise</h3>
+					<p class="choose-paragraph">Over 20 years of experience in delivering top-notch construction projects.</p>
 				</li>
 				<li>
-					<img src="https://placehold.co/48x48" alt="Quality Placeholder" class="value-icon" />
-					<span>Unmatched Quality</span>
-					<p>We adhere to the highest standards of quality and precision in every project.</p>
+					<div class="icon-circle"><Icon icon="ri:diamond-line" width="40" height="40" /></div>
+					<h3 class="choose-heading">Unmatched Quality</h3>
+					<p class="choose-paragraph">We adhere to the highest standards of quality and precision in every project.</p>
 				</li>
 				<li>
-					<img
-						src="https://placehold.co/48x48"
-						alt="Timely Delivery Placeholder"
-						class="value-icon"
-					/>
-					<span>Timely Delivery</span>
-					<p>Our projects are completed on time without compromising on quality.</p>
+					<div class="icon-circle"><Icon icon="hugeicons:time-quarter-pass" width="40" height="40" /></div>
+					<h3 class="choose-heading">Timely Delivery</h3>
+					<p class="choose-paragraph">Our projects are completed on time without compromising on quality.</p>
 				</li>
 				<li>
-					<img
-						src="https://placehold.co/48x48"
-						alt="Customer Support Placeholder"
-						class="value-icon"
-					/>
-					<span>Exceptional Support</span>
-					<p>We provide end-to-end support to ensure customer satisfaction.</p>
+					<div class="icon-circle"><Icon icon="ri:customer-service-2-fill" width="40" height="40" /></div>
+					<h3 class="choose-heading">Exceptional Support</h3>
+					<p class="choose-paragraph">We provide end-to-end support to ensure customer satisfaction.</p>
 				</li>
 			</ul>
 		</div>
@@ -182,8 +172,7 @@
 				<div class="achievement-item">
 					<h3>100+ Projects Completed</h3>
 					<p>
-						Successfully delivered over 100 projects across residential, commercial, and industrial
-						sectors.
+						Successfully delivered over 100 projects across residential, commercial, and industrial sectors.
 					</p>
 				</div>
 				<div class="achievement-item">
@@ -200,30 +189,28 @@
 		</div>
 	</section>
 
-	<section class="brand-zigzag section-padding">
+	<section class="brand-zigzag section-padding section-alt">
 		<div class="container">
 			<div class="zigzag-item">
 				<div class="zigzag-content">
 					<h2 class="zigzag-heading sh-b1">Innovative Designs</h2>
 					<p class="section-description">
-						We bring creativity and functionality together to create innovative designs that stand
-						out.
+						We bring creativity and functionality together to create innovative designs that stand out.
 					</p>
 				</div>
 				<div class="zigzag-image">
-					<img src="https://placehold.co/600x400/png" alt="Innovative Designs" />
+					<img src={zig1} alt="Innovative Designs" />
 				</div>
 			</div>
 			<div class="zigzag-item reverse">
 				<div class="zigzag-content">
 					<h2 class="zigzag-heading sh-b1">Sustainable Practices</h2>
 					<p class="section-description">
-						Our commitment to sustainability ensures that our projects are environmentally friendly
-						and future-ready.
+						Our commitment to sustainability ensures that our projects are environmentally friendly and future-ready.
 					</p>
 				</div>
 				<div class="zigzag-image">
-					<img src="https://placehold.co/600x400/png" alt="Sustainable Practices" />
+					<img src={zig2} alt="Sustainable Practices" />
 				</div>
 			</div>
 			<div class="zigzag-item">
@@ -234,7 +221,7 @@
 					</p>
 				</div>
 				<div class="zigzag-image">
-					<img src="https://placehold.co/600x400/png" alt="Customer Satisfaction" />
+					<img src={zig3} alt="Customer Satisfaction" />
 				</div>
 			</div>
 		</div>
@@ -242,96 +229,120 @@
 </main>
 
 <style>
+
 	.section-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 1.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 2rem;
 		list-style: none;
 		padding: 0;
 	}
-
 	.section-list li {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
+		background: #fff;
+		box-shadow: 0 2px 8px rgba(126, 124, 26, 0.04);
+		padding: 2rem 1rem 1.5rem 1rem;
+		transition: box-shadow 0.2s;
 	}
-
-	.value-icon {
-		width: 48px;
-		height: 48px;
-		margin-bottom: 0.5rem;
+	.section-list li:hover {
+		box-shadow: 0 4px 16px rgba(26,35,126,0.10);
 	}
-
-	.zigzag-item {
+	.icon-circle {
 		display: flex;
 		align-items: center;
-		margin-bottom: 4rem;
+		justify-content: center;
+		padding: .8rem;
+		border-radius: 50%;
+		background: linear-gradient(120deg, #faf8e3 0%, #e9e4c5 100%);
+		margin-bottom: 1rem;
 	}
-
-	.zigzag-item.reverse {
-		flex-direction: row-reverse;
+	.values-heading,
+	.choose-heading {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-block: 0.7rem .4rem;
+		color: #7e771a;
 	}
-
-	.zigzag-content {
-		flex: 1;
-		padding: 1rem;
+	.values-paragraph,
+	.choose-paragraph {
+		font-size: 1rem;
+		color: #555;
 	}
-	.zigzag-heading {
-		font-size: 1.3rem;
-		text-transform: uppercase;
-		text-align: center;
-		margin-block: 3rem 1rem;
-	}
-
-	.zigzag-image {
-		flex: 1;
-		padding: 1rem;
-	}
-
-	.zigzag-image img {
-		width: 100%;
-		height: auto;
-		border-radius: 8px;
-	}
-
-	@media (max-width: 768px) {
-		.zigzag-item {
-			flex-direction: column;
-		}
-
-		.zigzag-item.reverse {
-			flex-direction: column;
-		}
-
-		.zigzag-content,
-		.zigzag-image {
-			padding: 0.5rem;
-		}
-	}
-
-	.achievements-grid {
+		.achievements-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2rem;
 	}
-
 	.achievement-item {
 		background: #f9f9f9;
-		padding: 1.5rem;
-		border-radius: 8px;
+		padding: 2rem 1.5rem;
 		text-align: center;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 2px 8px rgba(26,35,126,0.04);
+		transition: box-shadow 0.2s;
 	}
-
+	.achievement-item:hover {
+		box-shadow: 0 4px 16px rgba(26,35,126,0.10);
+	}
 	.achievement-item h3 {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
+		color: #cb952b;
+		font-weight: 600;
 	}
-
 	.achievement-item p {
 		font-size: 1rem;
 		color: #555;
+	}
+	.history-timeline {
+		margin: 2rem 0 1.5rem 0;
+		position: relative;
+		padding-left: 30px;
+		border-left: 3px solid #e9e7c5;
+	}
+	.timeline-item {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 1.5rem;
+		position: relative;
+	}
+	.timeline-dot {
+		width: 18px;
+		height: 18px;
+		background: linear-gradient(120deg, #7e6f1a 0%, #aba339 100%);
+		border-radius: 50%;
+		position: absolute;
+		left: -40px;
+		top: 0.2rem;
+		border: 3px solid #fff;
+		box-shadow: 0 2px 8px rgba(126, 99, 26, 0.1);
+	}
+	.timeline-content {
+		margin-left: 1rem;
+	}
+	.timeline-year {
+		display: inline-block;
+		font-weight: 700;
+		color: #cb952b;
+		font-size: 1.1rem;
+		margin-bottom: 0.2rem;
+	}
+	.history-summary {
+		margin-top: 2rem;
+		font-weight: 500;
+		color: #5f430b;
+	}
+	@media (max-width: 1024px) {
+		.section-list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (max-width: 768px) {
+		.section-list {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

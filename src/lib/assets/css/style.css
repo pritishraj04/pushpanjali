@@ -169,7 +169,7 @@ svg {
 }
 
 .section-padding {
-	padding-block: 2rem;
+	padding-block: 3rem;
 }
 .section-padding-top {
 	padding-top: 4rem;
@@ -541,3 +541,51 @@ svg {
 	opacity: 1;
 	transform: rotate(0);
 }
+.zigzag-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 4rem;
+		background: #fff;
+		box-shadow: 0 2px 8px rgba(26,35,126,0.04);
+		padding: 1.5rem 1rem;
+	}
+	.zigzag-item.reverse {
+		flex-direction: row-reverse;
+	}
+	.zigzag-content {
+		flex: 1;
+		padding: 1rem 2rem;
+	}
+	.zigzag-heading {
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		text-align: center;
+		margin-block: 2rem 1rem;
+		color: #cb952b;
+		font-weight: 600;
+	}
+	.zigzag-image {
+		flex: 1;
+		padding: 1rem 2rem;
+	}
+	.zigzag-image img {
+		width: 100%;
+		height: auto;
+		box-shadow: 0 2px 8px rgba(26,35,126,0.06);
+	}
+
+	@media (max-width: 1024px) {
+		.zigzag-content, .zigzag-image {
+			padding: 1rem 0.5rem;
+		}
+	}
+	@media (max-width: 768px) {
+		.zigzag-item {
+			flex-direction: column;
+			padding: 1rem 0.5rem;
+		}
+		.zigzag-item.reverse {
+			flex-direction: column;
+		}
+
+	}
