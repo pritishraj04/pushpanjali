@@ -1,5 +1,5 @@
 <script>
-	import logoWhite from '$lib/assets/images/logow.svg';
+	import logoWhite from '$lib/assets/images/logo.png';
 </script>
 
 <section class="cta-section">
