@@ -1,5 +1,7 @@
 <script>
 	import plusLogo from '$lib/assets/images/propertiesb.svg';
+	import investmentBenefits from '$lib/assets/images/invest.jpg';
+	import leasingBenefits from '$lib/assets/images/leasing.jpg';
 </script>
 
 <section class="section-padding section-alt">
@@ -16,14 +18,14 @@
 			</div>
 			<div class="plus-list">
 				<div class="plus-item">
-					<img src="https://placehold.co/400x400/png" alt="Investment Benefits" />
+					<img src={investmentBenefits} alt="Investment Benefits" />
 					<h4 class="accent">Investment Benefits</h4>
 					<p class="plus-item-description">
 						Maximize your returns with our expert investment solutions tailored to your needs.
 					</p>
 				</div>
 				<div class="plus-item">
-					<img src="https://placehold.co/400x400/png" alt="Leasing Solution" />
+					<img src={leasingBenefits} alt="Leasing Solution" />
 					<h4 class="accent">Leasing Solutions</h4>
 					<p class="plus-item-description">
 						Simplify leasing with our comprehensive and hassle-free services.
@@ -78,6 +80,7 @@
 		text-transform: uppercase;
 		font-size: 1.2rem; /* Slightly smaller font size */
 		margin-top: 1rem;
+		font-weight: 500;
 		color: #333;
 	}
 	.plus-item-description {

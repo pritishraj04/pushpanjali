@@ -1,10 +1,11 @@
 <script>
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import valuesLogo from '$lib/assets/images/rtp.svg';
-	import value1 from '$lib/assets/images/value/value1.jpeg';
-	import value2 from '$lib/assets/images/value/value2.jpeg';
-	import value3 from '$lib/assets/images/value/value3.jpeg';
-	import value4 from '$lib/assets/images/value/value4.jpeg';
+	import value1 from '$lib/assets/images/value/value1.jpg';
+	import value2 from '$lib/assets/images/value/value2.jpg';
+	import value3 from '$lib/assets/images/value/value3.jpg';
+	import value4 from '$lib/assets/images/value/value4.jpg';
+	import value5 from '$lib/assets/images/value/value5.jpg';
 	import Icon from '@iconify/svelte';
 
 	const options = {
@@ -53,7 +54,7 @@
 		},
 		{
 			id: 5,
-			src: value4,
+			src: value5,
 			alt: 'Img 5'
 		}
 	];

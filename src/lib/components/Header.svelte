@@ -94,7 +94,8 @@
 	}
 	.nav-link {
 		text-transform: uppercase;
-		font-size: 0.9rem;
+		font-size: 1rem;
+		font-weight: 500;
 	}
 	.nav-plus-cta {
 		display: flex;
@@ -109,7 +110,7 @@
 
 	@media screen and (max-width: 820px) {
 		.nav-link {
-			font-size: .7rem;
+			font-size: 1.2rem;
 		}
 		.header-wrapper {
 			padding-top: 1rem;

@@ -73,7 +73,7 @@ export const projects = [
 				image: ratnaTowerFloorPlan
 			},
 			{
-				name: 'Floor Plan',
+				name: 'Commercial Plan',
 				image: ratnaTowerFloorPlan
 			}
 		],
