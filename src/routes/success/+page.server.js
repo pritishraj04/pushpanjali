@@ -32,7 +32,7 @@ export const actions = {
         <div style="background-color: #24235c; padding: 20px; text-align: left; color: white;">
             <p style="margin: 0; font-size: 12px;">Warm regards,</p>
             <p style="font-weight: bold; margin: 5px 0; font-size: 14px;">The Pushpanjali Team</p>
-            <img src="https://puspanjali-dev.netlify.app/_app/immutable/assets/logow.DzlyySZ9.svg" alt="Pushpanjali Logo" style="margin-top: 15px; width: 100px;">
+            <img src="https://puspanjali-dev.netlify.app/_app/immutable/assets/logo.cDd-47mY.png" alt="Pushpanjali Logo" style="margin-top: 15px; width: 100px;">
         </div>
     </div>
     <div align="center" valign="top" style="line-height: 1.6; max-width: 600px; margin: auto; font-size: 13px; font-weight: 400; color: #999999; font-family: sans-serif;">

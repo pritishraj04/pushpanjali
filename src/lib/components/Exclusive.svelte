@@ -126,7 +126,7 @@
 			gap: 1.5rem;
 		}
 		.tagline {
-			font-size: 4rem;
+			font-size: min(10vw, 4rem);
 		}
 		.content {
 			font-size: 1.3rem;

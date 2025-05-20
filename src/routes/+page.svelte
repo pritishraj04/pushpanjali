@@ -115,4 +115,10 @@
 		letter-spacing: 0.03rem;
 		text-transform: uppercase;
 	}
+	@media screen and (max-width: 820px) {
+		.hero-bottom-bar {
+			font-size: 0.8rem;
+			padding: 0.5rem 0.5rem;
+		}
+	}
 </style>

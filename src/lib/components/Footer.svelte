@@ -178,6 +178,7 @@
 		.footer-links {
 			flex-direction: column;
 			gap: 1rem; /* Reduced gap between links on mobile */
+			flex: unset;
 		}
 	}
 </style>

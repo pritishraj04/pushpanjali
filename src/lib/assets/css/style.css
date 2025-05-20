@@ -261,6 +261,7 @@ svg {
 .btn {
 	border: none;
 	padding: 0.3rem 2.5rem;
+	white-space: nowrap;
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;

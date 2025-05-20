@@ -116,6 +116,9 @@
 			padding-top: 1rem;
 			padding-bottom: 1rem;
 		}
+		.company-logo {
+			width: min(40vw, 8rem);
+		}
 
 		.header-navigation {
 			opacity: 0;
@@ -143,6 +146,9 @@
 		}
 		.nav-plus-cta {
 			flex-direction: row-reverse;
+		}
+		.cta-btn{
+			font-size: .7rem;
 		}
 	}
 </style>

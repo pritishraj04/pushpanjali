@@ -56,7 +56,7 @@
 <div class="backdrop">
 	<div class="bg-[#f6f6f6] shadow-lg w-full max-w-lg p-8 space-y-6 mx-4 md:mx-auto">
 		<div class="flex justify-between items-center">
-			<h2 class="text-xl font-semibold">{file ? `Submit the form to download` : `Get in Touch`}</h2>
+			<h2 class="text-xl font-semibold text-gray-700">{file ? `Submit the form to download` : `Get in Touch`}</h2>
 			<button class="text-gray-500 hover:text-gray-700 cursor-pointer" onclick={togglePopup}>
 				<Icon icon="charm:cross" height="24" width="24" />
 			</button>
@@ -78,7 +78,7 @@
 					bind:value={name}
 					placeholder="Your Name"
 					required
-					class="mt-1 block w-full border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
+					class="mt-1 block w-full border text-gray-600 text-gray-600 border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
 				/>
 				{#if errors.name}
 					<p class="error-message">{errors.name}</p>
@@ -93,7 +93,7 @@
 					bind:value={email}
 					placeholder="Your Email"
 					required
-					class="mt-1 block w-full border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
+					class="mt-1 block w-full border text-gray-600 border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
 				/>
 				{#if errors.email}
 					<p class="error-message">{errors.email}</p>
@@ -114,7 +114,7 @@
 						bind:value={mobile}
 						placeholder="Your Mobile Number"
 						required
-						class="flex-1 block w-full border border-l-0 border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
+						class="flex-1 block w-full border text-gray-600 border-l-0 border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
 					/>
 				</div>
 				{#if errors.mobile}
@@ -127,7 +127,7 @@
 					id="project"
 					name="project"
 					bind:value={project}
-					class="mt-1 block w-full border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
+					class="mt-1 block w-full border text-gray-600 border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3 py-2 bg-white"
 				>
 					<option value="">Select a project</option>
 					{#each projects as project}
